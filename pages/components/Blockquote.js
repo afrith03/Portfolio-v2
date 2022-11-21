@@ -86,7 +86,7 @@ function Blockquote() {
                 <AiFillYoutube />
               </div>
             </div>
-            <div className="mx-auto bg-gradient-to-tr from-cyan-300 to-blue-600 rounded-full w-80 h-80 relative overflow-x-hidden md:h-90 md:w-90">
+            <div className="mx-auto hov bg-gradient-to-tr from-cyan-300 to-blue-600 rounded-full w-80 h-80 relative overflow-x-hidden md:h-90 md:w-90">
               <Image
                 src={deved}
                 // className="absolute w-96"

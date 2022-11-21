@@ -19,7 +19,7 @@ function Projects({ scaleEffect }) {
            </p>
            <a href={items.link} target="_blank">
              <button
-               className={`rounded-full m-3 font-mono bg-gradient-to-r from-cyan-500 text- to-teal-500 hover:bg-gradient-to-r hover:from-teal-500 hover:to-cyan-500 text-white shadow-xl ${scaleEffect} px-4 py-2`}
+               className={`cursor-none rounded-full m-3 font-mono bg-gradient-to-r from-cyan-500 text- to-teal-500 hover:bg-gradient-to-r hover:from-teal-500 hover:to-cyan-500 text-white shadow-xl ${scaleEffect} px-4 py-2`}
              >
                View Project
              </button>

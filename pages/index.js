@@ -1,3 +1,4 @@
+import { Document } from "postcss";
 import React from "react";
 import Portfolio from "./Portfolio";
 const { useState, useEffect } = React;
@@ -13,8 +14,6 @@ export default function index() {
     handleLinkHoverEvents();
     return () => removeEventListeners();
   }, []);
-  
-  
 
   const addEventListeners = () => {
     document.addEventListener("mousemove", onMouseMove);
@@ -33,15 +32,10 @@ export default function index() {
   };
 
   const onMouseMove = (e) => {
-    var x = e.clientX;
     setPosition({
-      x: x,
+      x: e.clientX,
       y: e.clientY,
     });
-    
-   
-    console.log(e.clientX)
-    // console.log(e)
   };
 
   const onMouseDown = () => {
@@ -62,13 +56,40 @@ export default function index() {
 
   const handleLinkHoverEvents = () => {
     document.querySelectorAll("a").forEach((el) => {
-      el.addEventListener("mouseover", () => setLinkHovered(true));
-      el.addEventListener("mouseout", () => setLinkHovered(false));
+      el.addEventListener("mouseover", () => {
+        setLinkHovered(true);
+      });
+      el.addEventListener("mouseout", () => {
+        setLinkHovered(false);
+      });
     });
+    document
+      .querySelectorAll(".hov , h1,h2,h3,h4,h5,h6 , span ")
+      .forEach((el) => {
+        el.addEventListener("mouseover", () => {
+          setLinkHovered(true);
+        });
+        el.addEventListener("mouseout", () => {
+          setLinkHovered(false);
+        });
+      });
   };
+  const cursorClasses = `cursor ${clicked && " cursor--clicked "} ${
+    hidden && "cursor--hidden"
+  } ${linkHovered && "cursor--link-hovered"}`;
+
+  //Console logs
+  // "cursor--clicked": clicked,
+  // "cursor--hidden": hidden,
+  // "cursor--link-hovered": linkHovered
+  // console.log(position);
 
   return (
     <>
+      <div
+        className={cursorClasses}
+        style={{ left: `${position.x}px`, top: `${position.y}px` }}
+      />
       <Portfolio />
     </>
   );
