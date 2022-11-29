@@ -26,6 +26,7 @@ a {
 
 * {
   box-sizing: border-box;
+  cursor: none;
 }
 @font-face {
   font-family: "burtons";

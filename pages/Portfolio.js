@@ -51,11 +51,11 @@ export default function Home() {
 
         <Projects scaleEffect={scaleEffect} />
     
+        <Contact />
       </main>
     </div>
-      {/* <section className="m-0 p-0 rounded-xl overflow-hidden w-full shadow-2xl">
-        <Contact />
-      </section> */}
+   
+      
     
     </>
   );

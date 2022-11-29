@@ -55,16 +55,8 @@ export default function index() {
   };
 
   const handleLinkHoverEvents = () => {
-    document.querySelectorAll("a").forEach((el) => {
-      el.addEventListener("mouseover", () => {
-        setLinkHovered(true);
-      });
-      el.addEventListener("mouseout", () => {
-        setLinkHovered(false);
-      });
-    });
     document
-      .querySelectorAll(".hov , h1,h2,h3,h4,h5,h6 , span ")
+      .querySelectorAll(".hov,a,h1,h2,h3,h4,h5,h6,span")
       .forEach((el) => {
         el.addEventListener("mouseover", () => {
           setLinkHovered(true);
@@ -90,6 +82,7 @@ export default function index() {
         className={cursorClasses}
         style={{ left: `${position.x}px`, top: `${position.y}px` }}
       />
+      <div className="bg-[url(../public/music-player.png)] bg-[url(../public/almiraaj.png)] bg-[url(../public/afrith-js.png)] bg-[url(../public/news-monkey.png)] bg-[url(../public/text-utils.png)] bg-[] bg-[]"></div>
       <Portfolio />
     </>
   );
