@@ -1,5 +1,6 @@
 import { Document } from "postcss";
 import React from "react";
+import Spinner from "./components/Spinner";
 import Portfolio from "./Portfolio";
 const { useState, useEffect } = React;
 
@@ -82,6 +83,9 @@ export default function index() {
         className={cursorClasses}
         style={{ left: `${position.x}px`, top: `${position.y}px` }}
       />
+
+<Spinner/>
+
       <div className="bg-[url(../public/music-player.png)] bg-[url(../public/almiraaj.png)] bg-[url(../public/afrith-js.png)] bg-[url(../public/news-monkey.png)] bg-[url(../public/text-utils.png)] bg-[] bg-[]"></div>
       <Portfolio />
     </>
