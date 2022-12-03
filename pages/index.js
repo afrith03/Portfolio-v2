@@ -5,11 +5,10 @@ import Spinner from "./components/Spinner";
 import Portfolio from "./Portfolio";
 const { useState, useEffect } = React;
 
-export default function index() {
- 
+export default function Index() {
   //for initial loading screen
-const [Blur, setBlur] = useState(true);
-useEffect(() => {
+const [blur, setBlur] = useState(true);
+  useEffect(() => {
     setTimeout(() => {
       setBlur(false);
     }, 2000);
@@ -18,9 +17,9 @@ useEffect(() => {
   return (
     <>
       <Cursor />
-     
-      {Blur && <Spinner />}
-      {!Blur && <Portfolio />}
+
+      {blur && <Spinner />}
+      {!blur && <Portfolio />}
     </>
   );
 }

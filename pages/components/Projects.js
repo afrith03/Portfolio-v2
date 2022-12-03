@@ -11,6 +11,7 @@ function Projects({ scaleEffect }) {
 
       {ProjectArray.map((items) => (
         <motion.div
+        key={items.id}
         drag
         dragConstraints={{left:5,right:5 ,top:10 , bottom:10}}
         className="relative rounded-2xl mx-2 my-4  md:mt-28 flex dark:bg-slate-700 bg-slate-50 max-w-3xl shadow-xl">
@@ -32,7 +33,7 @@ function Projects({ scaleEffect }) {
           >
             <h5 className=" font-bold text-2xl mb-3 mix-blend-multiply md:mix-blend-normal dark:md:text-slate-100">{items.title}</h5>
             <p className="text-left text-sm leading-5  text-black md:text-slate-700 mix-blend-multiply  md:mix-blend-normal dark:md:text-slate-100">{items.description}</p>
-            <a href={items.link} target="_blank">
+            <a href={items.link} target="_blank"  rel="noreferrer" >
               <button
                 className={`cursor-none rounded-full m-3 font-mono bg-gradient-to-r from-cyan-500 text- to-teal-500 hover:bg-gradient-to-r hover:from-teal-500 hover:to-cyan-500 text-white shadow-xl ${scaleEffect} px-4 py-2`}
               >

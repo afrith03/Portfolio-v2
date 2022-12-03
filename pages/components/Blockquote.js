@@ -79,7 +79,7 @@ function Blockquote() {
           </Link>
           <a
             href="https://account.servicenow.com/personal-data/11ecd280b/7ae69f488/540637b41/5ed11T2MD/resume.html"
-            target="_blank"
+            target="_blank"  rel="noreferrer" 
             title="View Afrith's Profile in ServiceNow style"
           >
             <motion.button
@@ -97,7 +97,7 @@ function Blockquote() {
           <motion.a
             whileHover={{ rotate: 360, scale: 1.3 }}
             href="https://github.com/afrith03"
-            target="_blank"
+            target="_blank" 
             rel="noopener noreferrer"
           >
             <AiOutlineGithub />
@@ -105,7 +105,7 @@ function Blockquote() {
           <motion.a
             whileHover={{ rotate: 360, scale: 1.3 }}
             href="https://www.linkedin.com/in/afrithshariff/"
-            target="_blank"
+            target="_blank" 
             rel="noopener noreferrer"
           >
             <AiFillLinkedin />
@@ -113,7 +113,7 @@ function Blockquote() {
           <motion.a
             whileHover={{ rotate: 360, scale: 1.3 }}
             href="https://www.instagram.com/afrith_03/"
-            target="_blank"
+            target="_blank"  
             rel="noopener noreferrer"
           >
             <BsInstagram />

@@ -2,9 +2,7 @@ import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
 function Contact({ scaleEffect }) {
-  // var inputStyle =
-  //   "m-1 p-1 rounded-lg shadow-lg text-center outline-0 outline-slate-400 border border-slate-400 hover:bg-slate-200";
-
+  
   const inputStyleSuccess =
     "bg-green-50 border border-green-500 text-green-900 dark:text-green-400 placeholder-green-700 dark:placeholder-green-500 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5 dark:bg-gray-700 dark:border-green-500";
   const inputStyleError =
@@ -52,7 +50,7 @@ function Contact({ scaleEffect }) {
       console.log("ntg");
     }
     // setfirstHover(true)
-  }, [formInput]);
+  }, [formInput,firstHover]);
 
   return (
     <>
@@ -92,11 +90,15 @@ function Contact({ scaleEffect }) {
           animate={{
             scale: firstHover ? (formInput.name.length <= 3 ? 1 : 0.9) : 0,
           }}
-          className={formInput.name.length <= 3? 'text-sm text-red-600 dark:text-red-500' : "text-sm text-green-600 dark:text-green-500"}
-      
+          className={
+            formInput.name.length <= 3
+              ? "text-sm text-red-600 dark:text-red-500"
+              : "text-sm text-green-600 dark:text-green-500"
+          }
         >
-          {formInput.name.length <= 3 ? "uh oh! try more than 3 letters " : "Nice name!"}
-        
+          {formInput.name.length <= 3
+            ? "uh oh! try more than 3 letters "
+            : "Nice name!"}
         </motion.label>
 
         <input
@@ -120,10 +122,15 @@ function Contact({ scaleEffect }) {
           animate={{
             scale: firstHover ? (!isValidEmail(formInput.email) ? 1 : 0.9) : 0,
           }}
-          className= {(!isValidEmail(formInput.email) ? 'text-sm text-red-600 dark:text-red-500' : "text-sm text-green-600 dark:text-green-500")}
+          className={
+            !isValidEmail(formInput.email)
+              ? "text-sm text-red-600 dark:text-red-500"
+              : "text-sm text-green-600 dark:text-green-500"
+          }
         >
-          {(!isValidEmail(formInput.email) ? 'oh oh oh.. Email should be valid.' : "Great! lets get in touch")}
-        
+          {!isValidEmail(formInput.email)
+            ? "oh oh oh.. Email should be valid."
+            : "Great! lets get in touch"}
         </motion.label>
 
         <textarea
@@ -144,53 +151,22 @@ function Contact({ scaleEffect }) {
         <motion.label
           htmlFor="description"
           animate={{
-            scale: firstHover ? (formInput.description.length < 5 ? 1 : 0.9) : 0,
+            scale: firstHover
+              ? formInput.description.length < 5
+                ? 1
+                : 0.9
+              : 0,
           }}
-          className={formInput.description.length < 5 ? 'text-sm text-red-600 dark:text-red-500' : "text-sm text-green-600 dark:text-green-500"}
+          className={
+            formInput.description.length < 5
+              ? "text-sm text-red-600 dark:text-red-500"
+              : "text-sm text-green-600 dark:text-green-500"
+          }
         >
           {formInput.description.length < 5
-                ? "Oh, snapp! Say something sweet."
-                : "I'm excited to meet you!"}
-        
+            ? "Oh, snapp! Say something sweet."
+            : "I'm excited to meet you!"}
         </motion.label>
-
-        {/* <div>
-        <div className="mb-6">
-          <label
-            htmlFor="success"
-            className="block mb-2 text-sm font-medium text-green-700 dark:text-green-500"
-          >
-            Your name
-          </label>
-          <input
-            type="text"
-            id="success"
-            className="bg-green-50 border border-green-500 text-green-900 dark:text-green-400 placeholder-green-700 dark:placeholder-green-500 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5 dark:bg-gray-700 dark:border-green-500"
-            placeholder="Success input"
-          />
-          <p className="mt-2 text-sm text-green-600 dark:text-green-500">
-            <span className="font-medium">Well done!</span> Some success
-            messsage.
-          </p>
-        </div>
-        <div>
-          <label
-            htmlFor="error"
-            className="block mb-2 text-sm font-medium text-red-700 dark:text-red-500"
-          >
-            Your name
-          </label>
-          <input
-            type="text"
-            id="error"
-            className="bg-red-50 border border-red-500 text-red-900 placeholder-red-700 text-sm rounded-lg focus:ring-red-500 dark:bg-gray-700 focus:border-red-500 block w-full p-2.5 dark:text-red-500 dark:placeholder-red-500 dark:border-red-500"
-            placeholder="Error input"
-          />
-          <p className="mt-2 text-sm text-red-600 dark:text-red-500">
-            <span className="font-medium">Oh, snapp!</span> Some error message.
-          </p>
-        </div>
-      </div> */}
 
         <motion.button
           name="submit"

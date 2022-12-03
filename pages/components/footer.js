@@ -8,14 +8,14 @@ const Footer = () => {
         <span>
           <AiFillCopyrightCircle className="m-1 text-teal-500" />
         </span>
-       <a target="_blank" href="https://www.linkedin.com/in/afrithshariff/"><span className="text-teal-500"> Afrith </span>,</a> 
+       <a target="_blank"  rel="noreferrer"  href="https://www.linkedin.com/in/afrithshariff/"><span className="text-teal-500"> Afrith </span>,</a> 
       </p>
     </div>
     <div className="text-center text-sm md:text-md dark:text-white mb-3">
       <p className="inline-flex">
        All source code
         availabe at <AiOutlineGithub className="m-1 text-teal-500" />
-        <a target="_blank" href="https://github.com/afrith03">
+        <a target="_blank"  rel="noreferrer"  href="https://github.com/afrith03">
           <span className="text-teal-500">Github</span>{" "}
         </a>
       </p>

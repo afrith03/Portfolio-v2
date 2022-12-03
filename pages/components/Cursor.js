@@ -7,24 +7,22 @@ const isMobile = () => {
 };
 const Cursor = () => {
 
-  if (typeof navigator !== "undefined" && isMobile()) return null;
-
+  
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const [clicked, setClicked] = useState(false);
   const [linkHovered, setLinkHovered] = useState(false);
   const [hidden, setHidden] = useState(false);
-
+  
   useEffect(() => {
     // handleLinkHoverEvents();
-    addEventListeners();
-
+    addEventListeners(); 
     return () => removeEventListeners();
   }, []);
 
   useEffect(() => {
     handleLinkHoverEvents();
   }, [clicked]);
-
+  
   const addEventListeners = () => {
     document.addEventListener("mousemove", onMouseMove);
     document.addEventListener("mouseenter", onMouseEnter);
@@ -40,7 +38,8 @@ const Cursor = () => {
     document.removeEventListener("mousedown", onMouseDown);
     document.removeEventListener("mouseup", onMouseUp);
   };
-
+  
+  if (typeof navigator !== "undefined" && isMobile()) return null;
   const onMouseMove = (e) => {
     setPosition({
       x: e.clientX,
