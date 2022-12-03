@@ -55,7 +55,7 @@ function Contact({ scaleEffect }) {
     <>
     <div className="">
     <h1 className="text-3xl py-1 font-bold dark:text-white ">Contact Me!</h1>
-      <p translate="yes" className="w-10/12 text-sm text-center my-5 dark:text-white">
+      <p translate="yes" className="w-10/12 text-sm m-auto text-center my-5 dark:text-white">
         I’m currently looking for new opportunities, my inbox is always open.
         Whether you have a question or just want to say hi, I’ll get back to
         you!
@@ -63,7 +63,7 @@ function Contact({ scaleEffect }) {
     </div>
     <div
       id="contact"
-      className="my-10 mx-auto w-1/3 flex flex-col items-center justify-center text-slate-700"
+      className="my-10 mx-auto w-3/4 md:w-1/3 flex flex-col items-center justify-center text-slate-700"
     >
       
       <input
@@ -81,7 +81,7 @@ function Contact({ scaleEffect }) {
         }}
         className="text-sm text-red-600 dark:text-red-500"
       >
-        Name sould be more than 3 characters
+       try more than 3 letters
       </motion.label>
 
       <input
@@ -101,7 +101,7 @@ function Contact({ scaleEffect }) {
         }}
         className="text-sm text-red-600 dark:text-red-500"
       >
-        Please enter a valid Email address
+       oh oh oh.. Email should be valid.
       </motion.label>
 
       <textarea
@@ -169,7 +169,7 @@ function Contact({ scaleEffect }) {
           `}
         // ${btnMove ? "right-32 " : "left-32"} ease-in transition-all
         animate={{
-          x: firstHover ? (isValidForm ? (btnMove ? -150 : 150) : 0) : 0,
+          x: firstHover ? (isValidForm ? (btnMove ? -140 : 140) : 0) : 0,
           scale: 1,
           rotate: firstHover ? 360 : 0,
         }}

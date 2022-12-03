@@ -7,14 +7,18 @@ import {
 
 function Navbar({darkMode,setDarkMode}) {
   return (
-    <nav className="py-10 mb-12 flex justify-between dark:text-white">
+    <nav className="py-10 px-2 md:px-0 mb-12 flex justify-between dark:text-white">
             <h1 className="font-burtons text-xl">about me</h1>
             <ul className="flex items-center">
-              <li onClick={() => setDarkMode(!darkMode)}>
+              <li >
                 {darkMode ? (
-                  <BsCloudSun className="animate-wiggle cursor-pointer text-2xl" />
+                  <BsCloudSun className="animate-wiggle cursor-pointer text-2xl" onClick={() => {setDarkMode(!darkMode)
+                    console.log("youthuuu")
+                    }} />
                 ) : (
-                  <BsFillMoonStarsFill className="animate-wiggle cursor-pointer text-2xl" />
+                  <BsFillMoonStarsFill className="animate-wiggle cursor-pointer text-2xl" onClick={() => {setDarkMode(!darkMode)
+                    console.log("youthuuu")
+                    }}/>
                 )}
               </li>
               <li>

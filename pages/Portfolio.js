@@ -6,6 +6,7 @@ import Contact from "./components/contact";
 import About from "./components/About";
 import Blockquote from "./components/Blockquote";
 import Navbar from "./components/Navbar";
+import Footer from "./components/footer";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -52,6 +53,7 @@ export default function Home() {
         <Projects scaleEffect={scaleEffect} />
     
         <Contact scaleEffect={scaleEffect} />
+        <Footer/>
       </main>
     </div>
    

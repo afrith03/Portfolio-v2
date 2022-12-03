@@ -2,9 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
-cursor: none;
-}
 html,
 body {
   padding: 0;
@@ -26,7 +23,7 @@ a {
 
 * {
   box-sizing: border-box;
-  cursor: none;
+  /* cursor: none; */
 }
 @font-face {
   font-family: "burtons";
@@ -68,7 +65,9 @@ a {
 .spinner {
    position: relative;
    width: 15.7px;
+   position: fixed;
    height: 15.7px;
+   z-index: 999999;
 }
 
 .spinner div {
