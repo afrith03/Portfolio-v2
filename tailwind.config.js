@@ -14,6 +14,7 @@ module.exports = {
       backgroundImage: {
         "hero-pattern": "url('../public/news-monkey.png')",
       },
+      
       keyframes: {
         wiggle: {
           "0%, 100%": { transform: "rotate(-3deg)" },
@@ -27,6 +28,14 @@ module.exports = {
       animation: {
         wiggle: "wiggle 1s ease-in-out infinite",
       },
+      //imgage hover property
+      backgroundSize: {
+        'size-200': '200% 200%',
+    },
+    backgroundPosition: {
+        'pos-0': '0% 0%',
+        'pos-100': '100% 100%',
+    },
     },
   },
   plugins: [],

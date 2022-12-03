@@ -60,6 +60,15 @@ a {
   background-color: #fefefe;
 }
 
+/* for image  */
+.afrith{
+   top: -205px;
+   border-radius: 0% 0% 50% 50% / 0% 0% 37% 37%;
+}
+.webkit{
+   text-align: -webkit-center;
+
+}
 /* loader */
 
 .spinner {

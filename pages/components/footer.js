@@ -8,7 +8,7 @@ const Footer = () => {
         <span>
           <AiFillCopyrightCircle className="m-1 text-teal-500" />
         </span>
-        <span className="text-teal-500"> Afrith </span>,
+       <a target="_blank" href="https://www.linkedin.com/in/afrithshariff/"><span className="text-teal-500"> Afrith </span>,</a> 
       </p>
     </div>
     <div className="text-center text-sm md:text-md dark:text-white mb-3">

@@ -12,12 +12,13 @@ const [Blur, setBlur] = useState(true);
 useEffect(() => {
     setTimeout(() => {
       setBlur(false);
-    }, 3000);
+    }, 2000);
   }, []);
 
   return (
     <>
       <Cursor />
+     
       {Blur && <Spinner />}
       {!Blur && <Portfolio />}
     </>

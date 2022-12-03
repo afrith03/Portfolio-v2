@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 function Projects({ scaleEffect }) {
   return (
     // project 1
-    <div className="text-slate-700">
+    <div className="text-slate-700 webkit">
       <h3 className="text-3xl py-1 font-bold dark:text-white text-right">
         Some Things I’ve Built.
       </h3>
@@ -13,12 +13,12 @@ function Projects({ scaleEffect }) {
         <motion.div
         drag
         dragConstraints={{left:5,right:5 ,top:10 , bottom:10}}
-        className="relative rounded-2xl mx-2 my-4  md:mt-28  m-auto flex dark:bg-slate-700 bg-slate-50 max-w-3xl shadow-xl">
+        className="relative rounded-2xl mx-2 my-4  md:mt-28 flex dark:bg-slate-700 bg-slate-50 max-w-3xl shadow-xl">
           {/* {(items.id % 2 == 0) ? "true" :"false"} */}
          
          {/* Image */}
           <div
-            className={`px-4 pt-4 rounded-2xl w-[100%] h-56 blur-md bg-[${
+            className={`px-4 pt-4 rounded-2xl w-[100%] h-72 sm:h-56 md:h-72 lg:h-64 xl:h-60 blur-md bg-[${
               items.image
             }] md:bg-none ${
               items.id % 2 == 0 ? " " : "md:ml-[55%]"
@@ -44,7 +44,7 @@ function Projects({ scaleEffect }) {
             //  style={{background: items.image}}
             className={`md:w-[50%] shadow-inherit absolute bg-[${
               items.image
-            }] bg-cover bg-center bg-no-repeat h-72 ${
+            }] bg-cover bg-center bg-no-repeat h-72 md:h-80 lg:h-72 ${
               items.id % 2 == 0 ? "right-6" : "left-6"
             } bottom-0 rounded-t-2xl ${scaleEffect} `}
           ></div>
