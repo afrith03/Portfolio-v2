@@ -133,7 +133,7 @@ function Blockquote() {
           animate={{
             scale: 1.1,
           }}
-          initial={{ scale: 1.1 }}
+          initial={{ scale: 0 }}
           src="/afrith-cropped.png"
           className="relative afrith"
         />
