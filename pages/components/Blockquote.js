@@ -123,13 +123,17 @@ function Blockquote() {
       <motion.div
         drag
         dragConstraints={{ top: 0, bottom: 0, right: 20, left: 0 }}
+        animate={{
+          scale: 1,
+        }}
+        initial={{ scale: 0 }}
         className={`mt-11 md:mt-0 ${bgEffect} rounded-full h-80 w-80 overflow-visible`}
       >
         <motion.img
           animate={{
             scale: 1.1,
           }}
-          initial={{ scale: 0 }}
+          initial={{ scale: 1.1 }}
           src="/afrith-cropped.png"
           className="relative afrith"
         />
