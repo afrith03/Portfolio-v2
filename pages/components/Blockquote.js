@@ -142,6 +142,7 @@ function Blockquote() {
         
         src={deved}
         className="relative afrith"
+        placeholder="blur"
       />
       </motion.div>
     </div>
