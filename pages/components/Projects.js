@@ -56,8 +56,8 @@ function Projects({ scaleEffect }) {
       {ProjectArray.map((items) => (
         <motion.div
         key={items.id}
-        drag
-        dragConstraints={{left:5,right:5 ,top:10 , bottom:10}}
+        // drag
+        // dragConstraints={{left:5,right:5 ,top:10 , bottom:10}}
         className="relative rounded-2xl mx-2 my-4  md:mt-28 flex dark:bg-slate-700 bg-slate-50 max-w-3xl shadow-xl">
           {/* {(items.id % 2 == 0) ? "true" :"false"} */}
          

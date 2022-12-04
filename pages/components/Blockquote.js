@@ -121,8 +121,7 @@ function Blockquote() {
         </div>
       </motion.div>
       <motion.div
-        drag
-        dragConstraints={{ top: 0, bottom: 0, right: 20, left: 0 }}
+      
         animate={{
           scale: 1,
         }}
