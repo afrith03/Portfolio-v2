@@ -62,8 +62,15 @@ a {
 
 /* for image  */
 .afrith{
-   top: -205px;
+
+   top: -408px !important;
+   scale: 1.1;
    border-radius: 0% 0% 50% 50% / 0% 0% 37% 37%;
+   /* top: -205px;
+   border-radius: 0% 0% 50% 50% / 0% 0% 37% 37%; */
+}
+span{
+   overflow: visible !important;
 }
 .webkit{
    text-align: -webkit-center;

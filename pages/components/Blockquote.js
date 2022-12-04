@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { AiFillLinkedin, AiOutlineGithub } from "react-icons/ai";
 import { BsCursor, BsInstagram } from "react-icons/bs";
-import deved from "../../public/afrith.png";
+import deved from "../../public/afrith-cropped.png";
 import Image from "next/image";
 import Link from "next/link";
 function Blockquote() {
@@ -129,7 +129,7 @@ function Blockquote() {
         initial={{ scale: 0 }}
         className={`mt-11 md:mt-0 ${bgEffect} rounded-full h-80 w-80 overflow-visible`}
       >
-        <motion.img
+        {/* <motion.img
           animate={{
             scale: 1.1,
           }}
@@ -137,14 +137,12 @@ function Blockquote() {
           loading="lazy"
           src="/afrith-cropped.png"
           className="relative afrith"
-        />
-        {/* <Image
+        /> */}
+        <Image
         
         src={deved}
-        className="w-full"
-        layout="fill"
-        objectFit="cover"
-      /> */}
+        className="relative afrith"
+      />
       </motion.div>
     </div>
   );
