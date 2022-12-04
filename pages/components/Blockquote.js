@@ -134,7 +134,7 @@ function Blockquote() {
             scale: 1.1,
           }}
           initial={{ scale: 0 }}
-          loading="eager"
+          loading="lazy"
           src="/afrith-cropped.png"
           className="relative afrith"
         />
