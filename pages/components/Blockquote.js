@@ -143,6 +143,7 @@ function Blockquote() {
         src={deved}
         className="relative afrith"
         placeholder="blur"
+        alt="Picture of the afrith (developer)"
         priority
       />
       </motion.div>

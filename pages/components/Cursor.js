@@ -1,10 +1,10 @@
 import React from "react";
 const { useState, useEffect } = React;
 
-const isMobile = () => {
-  const ua = navigator.userAgent;
-  return /Android|Mobi/i.test(ua);
-};
+// const isMobile = () => {
+//   const ua = navigator.userAgent;
+//   return /Android|Mobi/i.test(ua);
+// };
 const Cursor = () => {
 
   
@@ -39,7 +39,7 @@ const Cursor = () => {
     document.removeEventListener("mouseup", onMouseUp);
   };
   
-  if (typeof navigator !== "undefined" && isMobile()) return null;
+  // if (typeof navigator !== "undefined" && isMobile()) return null;
   const onMouseMove = (e) => {
     setPosition({
       x: e.clientX,
