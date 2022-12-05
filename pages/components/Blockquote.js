@@ -14,7 +14,7 @@ function Blockquote() {
           scale: 1,
         }}
         initial={{ scale: 0 }}
-        className="content w-full col-span-2"
+        className="content w-full col-span-2 z-50"
       >
         <div className="text-4xl mt-auto font-bold align-text-bottom font-mono py-2 text-teal-600 dark:text-teal-400 md:text-5xl">
           <span className="hover:text-7xl hover:text-black dark:hover:text-teal-100 transition-all ease-in-out">
@@ -66,7 +66,7 @@ function Blockquote() {
         I build things for the web.
 
         </p>
-        <div className="md:flex gap-3 ">
+        <div className="md:flex gap-3">
           <Link href="#contact">
             <motion.button
               whileHover={{ scale: 1.1 }}

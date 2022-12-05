@@ -1,10 +1,10 @@
 import React from "react";
 const { useState, useEffect } = React;
 
-const isMobile = () => {
-  const ua = navigator.userAgent;
-  return /Android|Mobi/i.test(ua);
-};
+// const isMobile = () => {
+//   const ua = navigator.userAgent;
+//   return /Android|Mobi/i.test(ua);
+// };
 const Cursor = () => {
 
   
@@ -39,14 +39,13 @@ const Cursor = () => {
     document.removeEventListener("mouseup", onMouseUp);
   };
   
-  if (typeof navigator !== "undefined" && isMobile()) return (<div></div>);
   const onMouseMove = (e) => {
     setPosition({
       x: e.clientX,
       y: e.clientY,
     });
   };
-
+  
   const onMouseDown = () => {
     setClicked(true);
   };
@@ -54,11 +53,11 @@ const Cursor = () => {
   const onMouseUp = () => {
     setClicked(false);
   };
-
+  
   const onMouseLeave = () => {
     setHidden(true);
   };
-
+  
   const onMouseEnter = () => {
     setHidden(false);
   };
@@ -76,12 +75,13 @@ const Cursor = () => {
   const cursorClasses = `cursor ${clicked && " cursor--clicked "} ${
     hidden && "cursor--hidden"
   } ${linkHovered && "cursor--link-hovered"}`;
-
+  
+  // if (typeof navigator !== "undefined" && isMobile()) return (<div></div>);
   return (
     <>
       <div className="bg-[url(../public/music-player.png)] bg-[url(../public/almiraaj.png)] bg-[url(../public/afrith-js.png)] bg-[url(../public/news-monkey.png)] bg-[url(../public/text-utils.png)] bg-[] bg-[]"></div>
       <div
-        className={cursorClasses}
+        className={`${cursorClasses} hidden md:block`}
         style={{ left: `${position.x}px`, top: `${position.y}px` }}
       />
     </>
