@@ -16,7 +16,7 @@ const [blur, setBlur] = useState(true);
 
   return (
     <>
-      <Cursor />
+      {/* <Cursor /> */}
 
       {blur && <Spinner />}
       {!blur && <Portfolio />}

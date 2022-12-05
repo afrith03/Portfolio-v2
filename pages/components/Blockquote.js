@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { AiFillLinkedin, AiOutlineGithub } from "react-icons/ai";
 import { BsCursor, BsInstagram } from "react-icons/bs";
-import deved from "../../public/afrith-cropped.png";
+import deved from "../../public/afrith-cropped-2.png";
 import Image from "next/image";
 import Link from "next/link";
 function Blockquote() {
@@ -14,7 +14,7 @@ function Blockquote() {
           scale: 1,
         }}
         initial={{ scale: 0 }}
-        className="content w-full col-span-2 z-50"
+        className="content w-full col-span-2"
       >
         <div className="text-4xl mt-auto font-bold align-text-bottom font-mono py-2 text-teal-600 dark:text-teal-400 md:text-5xl">
           <span className="hover:text-7xl hover:text-black dark:hover:text-teal-100 transition-all ease-in-out">
@@ -66,7 +66,7 @@ function Blockquote() {
         I build things for the web.
 
         </p>
-        <div className="md:flex gap-3">
+        <div className="md:flex gap-3 z-50">
           <Link href="#contact">
             <motion.button
               whileHover={{ scale: 1.1 }}
@@ -96,6 +96,7 @@ function Blockquote() {
         <div className="text-3xl flex gap-4 pt-10 text-gray-600 dark:text-gray-400">
           <motion.a
             whileHover={{ rotate: 360, scale: 1.3 }}
+            className="z-50"
             href="https://github.com/afrith03"
             target="_blank" 
             rel="noopener noreferrer"
@@ -104,6 +105,7 @@ function Blockquote() {
           </motion.a>
           <motion.a
             whileHover={{ rotate: 360, scale: 1.3 }}
+            className="z-50"
             href="https://www.linkedin.com/in/afrithshariff/"
             target="_blank" 
             rel="noopener noreferrer"
@@ -112,6 +114,7 @@ function Blockquote() {
           </motion.a>
           <motion.a
             whileHover={{ rotate: 360, scale: 1.3 }}
+            className="z-50"
             href="https://www.instagram.com/afrith_03/"
             target="_blank"  
             rel="noopener noreferrer"
