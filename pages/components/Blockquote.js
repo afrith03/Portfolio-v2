@@ -84,7 +84,12 @@ function Blockquote() {
           >
             <motion.button
               whileHover={{ scale: 1.1 }}
-              whileTap={{ rotate: 360 }}
+              whileTap={{ 
+                scale: 0.8
+                // rotate: 360,
+
+              
+              }}
               className="mt-3 md:mt-0 rounded-full font-mono bg-gradient-to-r from-cyan-500 to-teal-500 hover:bg-gradient-to-r hover:from-teal-500 hover:to-cyan-500 focus:outline-none focus:ring focus:ring-sky-300 text-white px-4 py-2 flex"
             >
               ServiceNow

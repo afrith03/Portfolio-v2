@@ -15,7 +15,7 @@ const Footer = () => {
       <p className="inline-flex">
        All source code
         availabe at <AiOutlineGithub className="m-1 text-teal-500" />
-        <a target="_blank"  rel="noreferrer"  href="https://github.com/afrith03">
+        <a target="_blank"  rel="noreferrer"  href="https://github.com/afrith03/Portfolio-v2">
           <span className="text-teal-500">Github</span>{" "}
         </a>
       </p>

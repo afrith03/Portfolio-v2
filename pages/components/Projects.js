@@ -63,11 +63,11 @@ function Projects({ scaleEffect }) {
          
          {/* Image */}
           <div
-            className={`px-4 pt-4 rounded-2xl w-[100%] h-72 sm:h-56 md:h-72 lg:h-64 xl:h-60 blur-md bg-[${
+            className={`px-4 pt-4 rounded-2xl w-[100%] h-64 sm:h-56 md:h-72 lg:h-64 xl:h-60 blur-md bg-[${
               items.image
             }] md:bg-none ${
               items.id % 2 == 0 ? " " : "md:ml-[55%]"
-            } bg-cover md:w-[45%] text-center`}
+            } bg-cover bg-center md:w-[45%] text-center`}
           ></div>
           {/* content */}
           <div
