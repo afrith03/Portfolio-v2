@@ -191,10 +191,15 @@ function Contact({ scaleEffect }) {
             setfirstHover(true);
           }}
           onClick={() => {
-            isValidForm && setBtnMove(!btnMove);
-            setfirstHover(true);
+           if ( isValidForm) {
+            setBtnMove(!btnMove)
+           }
+           else{
             console.log("clicked");
             alert("Got your Mail. will get back to you!")
+           }
+            setfirstHover(true);
+           
           }}
         >
           {firstHover ? "Send a mail" : "Try me!"}
