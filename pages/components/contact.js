@@ -62,7 +62,7 @@ function Contact({ scaleEffect }) {
           translate="yes"
           className="w-10/12 text-sm m-auto text-center my-5 dark:text-white"
         >
-         Want to work together or have any questions? my inbox is always open.
+         Want to collabrate or have any questions? my inbox is always open.
           Whether you just want to say hi, I’ll get back to
           you!
         </p>
