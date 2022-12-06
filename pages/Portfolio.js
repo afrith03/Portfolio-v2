@@ -19,7 +19,7 @@ export default function Home() {
       <Head>
         <title>About me - Afrith Shariff</title>
         <meta name="description" content="Portfoloi website" />
-        <link rel="icon" href="/logo-2.png" />
+        <link rel="icon" href="/afrith-logo.png" />
       </Head>
       <FixedBtn/>
       <main className="font-mono px-1 sm:px-10 overflow-hidden dark:bg-gray-900 md:px-20 lg:px-40">

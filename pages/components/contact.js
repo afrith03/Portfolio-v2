@@ -62,8 +62,8 @@ function Contact({ scaleEffect }) {
           translate="yes"
           className="w-10/12 text-sm m-auto text-center my-5 dark:text-white"
         >
-          I’m currently looking for new opportunities, my inbox is always open.
-          Whether you have a question or just want to say hi, I’ll get back to
+         Want to work together or have any questions? my inbox is always open.
+          Whether you just want to say hi, I’ll get back to
           you!
         </p>
       </div>
