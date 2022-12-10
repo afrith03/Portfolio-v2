@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-
+import axios from "axios";
 function Contact({ scaleEffect }) {
   
   const inputStyleSuccess =
@@ -195,14 +195,20 @@ function Contact({ scaleEffect }) {
             setBtnMove(!btnMove)
            }
            else{
-            console.log("clicked");
-            alert("Got your Mail. will get back to you!")
+            axios.post('/api/hello', formInput)
+            .then(function (response) {
+              console.log(response);
+            })
+            .catch(function (error) {
+              console.log(error);
+            });
            }
             setfirstHover(true);
            
           }}
         >
-          {firstHover ? "Send a mail" : "Try me!"}
+          
+          {firstHover ? "Send a mail!" : "Try me!"}
         </motion.button>
 
         <br />
