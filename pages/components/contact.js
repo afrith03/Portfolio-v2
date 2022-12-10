@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import axios from "axios";
+import styles from "../../styles/contact.module.css";
 function Contact({ scaleEffect }) {
-  
   const inputStyleSuccess =
     "bg-green-50 border border-green-500 text-green-900 dark:text-green-400 placeholder-green-700 dark:placeholder-green-500 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5 dark:bg-gray-700 dark:border-green-500";
   const inputStyleError =
@@ -15,6 +15,9 @@ function Contact({ scaleEffect }) {
   const [isValidForm, setisValidForm] = useState(true);
   const [firstHover, setfirstHover] = useState(false);
 
+  //after mail button getting clicked
+  const [loading, setloading] = useState(false);
+  const [isMailSentSuccess, setisMailSentSuccess] = useState(false);
   //change handler for inputs
   const [formInput, setformInput] = useState({
     name: "",
@@ -50,7 +53,7 @@ function Contact({ scaleEffect }) {
       console.log("ntg");
     }
     // setfirstHover(true)
-  }, [formInput,firstHover]);
+  }, [formInput, firstHover]);
 
   return (
     <>
@@ -62,9 +65,8 @@ function Contact({ scaleEffect }) {
           translate="yes"
           className="w-10/12 text-sm m-auto text-center my-5 dark:text-white"
         >
-         Want to collabrate or have any questions? my inbox is always open.
-          Whether you just want to say hi, I’ll get back to
-          you!
+          Want to collabrate or have any questions? my inbox is always open.
+          Whether you just want to say hi, I’ll get back to you!
         </p>
       </div>
       <div
@@ -173,13 +175,16 @@ function Contact({ scaleEffect }) {
           id="submit"
           className={`cursor-none rounded-full m-3 bg-gradient-to-r from-cyan-500 text- to-teal-500 hover:bg-gradient-to-r hover:from-teal-500 hover:to-cyan-500 text-white shadow-xl px-4 py-2 
         ${firstHover ? "" : "animate-[wiggle_0.5s_ease-in-out_infinite]"}  
-          `}
+      `}
           // ${btnMove ? "right-32 " : "left-32"} ease-in transition-all
           animate={{
             x: firstHover ? (isValidForm ? (btnMove ? -140 : 140) : 0) : 0,
-            scale: 1,
+            scale: loading ? 0 : 1,
             rotate: firstHover ? 360 : 0,
           }}
+          // whileTap={{
+          //   scale: 0.1
+          // }}
           initial={{ scale: 0 }}
           transition={{
             type: "spring",
@@ -191,26 +196,55 @@ function Contact({ scaleEffect }) {
             setfirstHover(true);
           }}
           onClick={() => {
-           if ( isValidForm) {
-            setBtnMove(!btnMove)
-           }
-           else{
-            axios.post('/api/hello', formInput)
-            .then(function (response) {
-              console.log(response);
-            })
-            .catch(function (error) {
-              console.log(error);
-            });
-           }
+            if (isValidForm) {
+              setBtnMove(!btnMove);
+            } else {
+              setloading(true);
+              axios
+                .post("/api/hello", formInput)
+                .then(function (response) {
+                  console.log(response);
+                  setTimeout(() => {
+                    setloading(false);
+                    setisMailSentSuccess(true);
+                  }, 2500);
+                })
+                .catch(function (error) {
+                  console.log(error);
+                  setloading(true);
+                });
+            }
             setfirstHover(true);
-           
           }}
         >
-          
-          {firstHover ? "Send a mail!" : "Try me!"}
+          {firstHover
+            ? isMailSentSuccess
+              ? "Success! wanna send again?"
+              : "Send a mail!"
+            : "Try me!"}
         </motion.button>
 
+        {/* Spinner  */}
+        <div className="-m-4">
+          <motion.div
+            animate={{
+              scale: loading ? 1 : 0,
+            }}
+            initial={{ scale: 0 }}
+            class={styles.spinner}
+          ></motion.div>
+        </div>
+        <motion.label
+          animate={{
+            scale: loading ? 0 : isMailSentSuccess ? 1 : 0,
+          }}
+          initial={{ scale: 0 }}
+          className="text-base text-green-600 dark:text-green-500"
+          htmlFor="submit"
+        >
+          Please check you inbox!
+        </motion.label>
+        {/* Spinner  */}
         <br />
       </div>
     </>
