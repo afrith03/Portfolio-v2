@@ -201,7 +201,7 @@ function Contact({ scaleEffect }) {
             } else {
               setloading(true);
               axios
-                .post("/api/hello", formInput)
+                .post("/api/mail", formInput)
                 .then(function (response) {
                   console.log(response);
                   setTimeout(() => {

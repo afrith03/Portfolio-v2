@@ -1,11 +1,11 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
+import nodemailer from "nodemailer";
 
 export default function handler(req, res) {
   if (req.method === "POST") {
     // Process a POST request
     require("dotenv").config();
 
-    let nodemailer = require("nodemailer");
     const transporter = nodemailer.createTransport({
       port:587, // 465,//587
       host: "smtp.gmail.com",
