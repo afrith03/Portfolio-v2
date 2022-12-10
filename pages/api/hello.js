@@ -587,7 +587,8 @@ export default function handler(req, res) {
       if (err) console.log(err);
       else console.log(info);
     });
-    res.status(200).json({ mail: "success" });
+    res.status(200).json({ mail: "success" ,
+  request :req.body});
   } else {
     // Handle any other HTTP method
     res
