@@ -14,14 +14,14 @@ const Cursor = () => {
   const [hidden, setHidden] = useState(false);
   
   useEffect(() => {
-    // handleLinkHoverEvents();
+   handleLinkHoverEvents();
     addEventListeners(); 
     return () => removeEventListeners();
   }, []);
   
-  useEffect(() => {
-    handleLinkHoverEvents();
-  }, [clicked]);
+  // useEffect(() => {
+  //   handleLinkHoverEvents();
+  // }, [clicked]);
   
   const addEventListeners = () => {
     document.addEventListener("mousemove", onMouseMove);

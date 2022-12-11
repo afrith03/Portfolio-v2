@@ -18,6 +18,7 @@ function Contact({ scaleEffect }) {
   //after mail button getting clicked
   const [loading, setloading] = useState(false);
   const [isMailSentSuccess, setisMailSentSuccess] = useState(false);
+  const [mailSentCount, setmailSentCount] = useState(0)
   //change handler for inputs
   const [formInput, setformInput] = useState({
     name: "",
@@ -36,7 +37,7 @@ function Contact({ scaleEffect }) {
       ...formInput,
       [evt.target.name]: value,
     });
-
+    setfirstHover(true);
     console.log(formInput);
   }
 
@@ -171,9 +172,10 @@ function Contact({ scaleEffect }) {
         </motion.label>
 
         <motion.button
+        disabled={mailSentCount>=2}
           name="submit"
           id="submit"
-          className={`cursor-none rounded-full m-3 bg-gradient-to-r from-cyan-500 text- to-teal-500 hover:bg-gradient-to-r hover:from-teal-500 hover:to-cyan-500 text-white shadow-xl px-4 py-2 
+          className={`cursor-none hov rounded-full m-3  ${mailSentCount>=2 ?"bg-gradient-to-r from-slate-500 to-slate-400 hover:bg-gradient-to-r hover:from-slate-400 hover:to-slate-500": "bg-gradient-to-r from-cyan-500 to-teal-500 hover:bg-gradient-to-r hover:from-teal-500 hover:to-cyan-500"}  text-white shadow-xl px-4 py-2 
         ${firstHover ? "" : "animate-[wiggle_0.5s_ease-in-out_infinite]"}  
       `}
           // ${btnMove ? "right-32 " : "left-32"} ease-in transition-all
@@ -207,6 +209,7 @@ function Contact({ scaleEffect }) {
                   setTimeout(() => {
                     setloading(false);
                     setisMailSentSuccess(true);
+                    setmailSentCount(mailSentCount+1)
                   }, 2500);
                 })
                 .catch(function (error) {
@@ -219,7 +222,7 @@ function Contact({ scaleEffect }) {
         >
           {firstHover
             ? isMailSentSuccess
-              ? "Success! wanna send again?"
+              ? mailSentCount>=2?"uh oh! you've clicked a lot!": "Success! wanna send again?"
               : "Send a mail!"
             : "Try me!"}
         </motion.button>

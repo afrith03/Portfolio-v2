@@ -67,7 +67,7 @@ function Blockquote() {
 
         </p>
         <div className="md:flex gap-3 z-50">
-          <Link href="#contact">
+          <Link href="#contact" scroll={true} replace>
             <motion.button
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}

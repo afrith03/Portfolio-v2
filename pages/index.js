@@ -8,11 +8,11 @@ const { useState, useEffect } = React;
 export default function Index() {
   //for initial loading screen
   // const [blur, setBlur] = useState(true);
-  useEffect(() => {
-    setTimeout(() => {
-      setBlur(false);
-    }, 2000);
-  }, []);
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     setBlur(false);
+  //   }, 2000);
+  // }, []);
 
   return (
     <>
