@@ -1,27 +1,28 @@
 import nodemailer from "nodemailer";
 
 export default async (req, res) => {
-    
+  //de structuring
   const { name, email, description } = req.body;
+
   const transporter = nodemailer.createTransport({
     host: "smtp.gmail.com",
     port: 465,
     secure: true,
     auth: {
-        user: "afrithshariff20@gmail.com",
-        pass: process.env.password,
-      }
+      user: "afrithshariff20@gmail.com",
+      pass: process.env.password,
+    },
   });
 
   try {
     await transporter.sendMail({
-        from: "afrithshariff20@gmail.com",
-        to: email,
-        bcc: "afrithshariff123@gmail.com",
-        //bcc: "afrith.s@dyooti.com",
-        subject: `Got your message,${req.body.name}!`,
-        //text: req.body.description + " | Sent from: " + req.body.email,
-        html: `<!DOCTYPE html>
+      from: "afrithshariff20@gmail.com",
+      to: email,
+      bcc: "afrithshariff123@gmail.com",
+      //bcc: "afrith.s@dyooti.com",
+      subject: `Got your message, ${req.body.name}!`,
+      //text: req.body.description + " | Sent from: " + req.body.email,
+      html: `<!DOCTYPE html>
         <html
           lang="en"
           xmlns:o="urn:schemas-microsoft-com:office:office"

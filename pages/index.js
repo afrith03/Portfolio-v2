@@ -7,7 +7,7 @@ const { useState, useEffect } = React;
 
 export default function Index() {
   //for initial loading screen
-const [blur, setBlur] = useState(true);
+  // const [blur, setBlur] = useState(true);
   useEffect(() => {
     setTimeout(() => {
       setBlur(false);
@@ -17,9 +17,9 @@ const [blur, setBlur] = useState(true);
   return (
     <>
       <Cursor />
-
-      {blur && <Spinner />}
-      {!blur && <Portfolio />}
+      <Portfolio />
+      {/* {blur && <Spinner />} */}
+      {/* {!blur && <Portfolio />} */}
     </>
   );
 }
