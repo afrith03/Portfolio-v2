@@ -36,6 +36,10 @@ export default async (req, res) => {
             rel="stylesheet"
             type="text/css"
           />
+          <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+          />
           <!--<![endif]-->
           <style>
             * {
@@ -46,18 +50,15 @@ export default async (req, res) => {
               margin: 0;
               padding: 0;
             }
-      
-         a{
-        color: rgb(175, 100, 221);
-         }
-         a:hover{
-        color: #39cacb;
-         }
-         svg{
-        margin-left: 2px;
-        margin-right: 2px;
-         }
-      
+            .bicons {
+              margin: 8px;
+            }
+            a {
+              color: rgb(175, 100, 221);
+            }
+            a:hover {
+              color: #39cacb;
+            }
             #MessageViewBody a {
               color: inherit;
               text-decoration: none;
@@ -303,9 +304,9 @@ export default async (req, res) => {
                                               color: #3dcacb;
                                             "
                                           >
-                                            I just received your message "${description}" via my
-                                            website. I'll get back to you as soon as
-                                            possible.
+                                            I just received your message
+                                            "${description}" via my website. I'll get
+                                            back to you as soon as possible.
                                           </p>
                                           <p
                                             style="
@@ -362,8 +363,9 @@ export default async (req, res) => {
                                             mso-line-height-alt: 18px;
                                           "
                                         >
-                                          <p style="margin: 0; margin-bottom: 12px">
-                                          </p>
+                                          <p
+                                            style="margin: 0; margin-bottom: 12px"
+                                          ></p>
                                           <p
                                             style="
                                               margin: 0;
@@ -410,54 +412,41 @@ export default async (req, res) => {
                                           padding-left: 0px;
                                         "
                                       >
-                                        <div align="center" class="alignment">
-                                          <table
-                                            border="0"
-                                            cellpadding="0"
-                                            cellspacing="0"
-                                            class="social-table"
-                                            role="presentation"
-                                            style="
-                                              mso-table-lspace: 0pt;
-                                              mso-table-rspace: 0pt;
-                                              display: inline-block;
-                                            "
-                                            width="210px"
-                                          >
-                                            <tr>
-                                              <td style="padding: 0 5px 0 5px">
-                                                <a
-                                                  href="https://github.com/afrith03"
-                                                  target="_blank"
-                                                  ><img src="https://afrithshariff.me/github.svg" alt="github"></a>
-                                              </td>
-                                              <td style="padding: 0 5px 0 5px">
-                                                <a
-                                                  href="https://www.linkedin.com/in/afrithshariff/"
-                                                  target="_blank"
-                                                  ><img src="https://afrithshariff.me/linkedin.svg" alt="linkedin"></a>
-                                              </td>
-                                              <td style="padding: 0 5px 0 5px">
-                                                <a
-                                                  href="https://www.instagram.com/afrith_03/"
-                                                  target="_blank"
-                                                  ><img src="https://afrithshariff.me/instagram.svg" alt="instagram"></a>
-                                              </td>
-                                              <td style="padding: 0 5px 0 5px">
-                                                <a
-                                                  href="https://wa.me/qr/TL66KUYLFWQUF1"
-                                                  target="_blank"
-                                                  ><img src="https://afrithshariff.me/whatsapp.svg" alt="whatsapp">
-                                                </a>
-                                              </td>
-                                              <td style="padding: 0 5px 0 5px">
-                                                <a
-                                                  href="https://afrithshariff.me"
-                                                  target="_blank"
-                                                  ><img src="https://afrithshariff.me/link.svg" alt="link"></a>
-                                              </td>
-                                            </tr>
-                                          </table>
+                                        <div>
+                                          <a
+                                            class="bicons"
+                                            href="https://github.com/afrith03"
+                                            target="_blank"
+                                            ><i class="bi bi-github"></i
+                                          ></a>
+      
+                                          <a
+                                            class="bicons"
+                                            href="https://www.linkedin.com/in/afrithshariff/"
+                                            target="_blank"
+                                            ><i class="bi bi-linkedin"></i
+                                          ></a>
+      
+                                          <a
+                                            class="bicons"
+                                            href="https://www.instagram.com/afrith_03/"
+                                            target="_blank"
+                                            ><i class="bi bi-instagram"></i
+                                          ></a>
+      
+                                          <a
+                                            class="bicons"
+                                            href="https://wa.me/qr/TL66KUYLFWQUF1"
+                                            target="_blank"
+                                            ><i class="bi bi-whatsapp"></i
+                                          ></a>
+      
+                                          <a
+                                            class="bicons"
+                                            href="https://afrithshariff.me"
+                                            target="_blank"
+                                            ><i class="bi bi-link-45deg"></i
+                                          ></a>
                                         </div>
                                       </td>
                                     </tr>

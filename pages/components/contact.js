@@ -17,8 +17,8 @@ function Contact({ scaleEffect }) {
 
   //after mail button getting clicked
   const [loading, setloading] = useState(false);
-  const [isMailSentSuccess, setisMailSentSuccess] = useState(false);
-  const [mailSentCount, setmailSentCount] = useState(0)
+  const [isMailSentSuccess, setisMailSentSuccess] = useState(null);
+  const [mailSentCount, setmailSentCount] = useState(0);
   //change handler for inputs
   const [formInput, setformInput] = useState({
     name: "",
@@ -172,10 +172,14 @@ function Contact({ scaleEffect }) {
         </motion.label>
 
         <motion.button
-        disabled={mailSentCount>=2}
+        //  disabled={mailSentCount >= 2}
           name="submit"
           id="submit"
-          className={`cursor-none hov rounded-full m-3  ${mailSentCount>=2 ?"bg-gradient-to-r from-slate-500 to-slate-400 hover:bg-gradient-to-r hover:from-slate-400 hover:to-slate-500": "bg-gradient-to-r from-cyan-500 to-teal-500 hover:bg-gradient-to-r hover:from-teal-500 hover:to-cyan-500"}  text-white shadow-xl  dark:shadow-xl dark:shadow-black  px-4 py-2 
+          className={`hov rounded-full m-3  ${
+            mailSentCount >= 2
+              ? "bg-gradient-to-r from-slate-500 to-slate-400 hover:bg-gradient-to-r hover:from-slate-400 hover:to-slate-500"
+              : "bg-gradient-to-r from-cyan-500 to-teal-500 hover:bg-gradient-to-r hover:from-teal-500 hover:to-cyan-500"
+          }  text-white shadow-xl  dark:shadow-lg dark:shadow-black  px-4 py-2 
         ${firstHover ? "" : "animate-[wiggle_0.5s_ease-in-out_infinite]"}  
       `}
           // ${btnMove ? "right-32 " : "left-32"} ease-in transition-all
@@ -184,8 +188,8 @@ function Contact({ scaleEffect }) {
             scale: loading ? 0 : 1,
             rotate: firstHover ? 360 : 0,
           }}
-          // whileTap={{
-          //   scale: 0.1
+          // whileHover={{
+          //   scale: 1.1
           // }}
           initial={{ scale: 0 }}
           transition={{
@@ -198,7 +202,7 @@ function Contact({ scaleEffect }) {
             setfirstHover(true);
           }}
           onClick={() => {
-            if (isValidForm) {
+            if (isValidForm ||mailSentCount >= 2 ) {
               setBtnMove(!btnMove);
             } else {
               setloading(true);
@@ -209,12 +213,13 @@ function Contact({ scaleEffect }) {
                   setTimeout(() => {
                     setloading(false);
                     setisMailSentSuccess(true);
-                    setmailSentCount(mailSentCount+1)
+                    setmailSentCount(mailSentCount + 1);
                   }, 2500);
                 })
                 .catch(function (error) {
                   console.log(error);
-                  setloading(true);
+                  setisMailSentSuccess(false);
+                  setloading(false);
                 });
             }
             setfirstHover(true);
@@ -222,8 +227,12 @@ function Contact({ scaleEffect }) {
         >
           {firstHover
             ? isMailSentSuccess
-              ? mailSentCount>=2?"uh oh! you've clicked a lot!": "Success! wanna send again?"
-              : "Send a mail!"
+              ? mailSentCount >= 2
+                ? "uh oh! you've clicked a lot!"
+                : "Success! wanna send again?"
+              : isMailSentSuccess == null
+              ? "Send a mail!"
+              : "Oh snap! something is wrong,"
             : "Try me!"}
         </motion.button>
 
@@ -239,13 +248,21 @@ function Contact({ scaleEffect }) {
         </div>
         <motion.label
           animate={{
-            scale: loading ? 0 : isMailSentSuccess ? 1 : 0,
+            scale: isValidForm ? 0 : loading ? 0 : isMailSentSuccess ? 1 : 0.9,
           }}
           initial={{ scale: 0 }}
-          className="text-base text-green-600 dark:text-green-500"
+          className={
+            isMailSentSuccess
+              ? "text-sm text-green-600 dark:text-green-500"
+              : "text-sm text-red-600 dark:text-red-500"
+          }
           htmlFor="submit"
         >
-          Please check you inbox!
+          {isMailSentSuccess == null
+            ? ""
+            : isMailSentSuccess
+            ? " Please check you inbox!"
+            : "We've got an error! probably internet issue."}
         </motion.label>
         {/* Spinner  */}
         <br />

@@ -132,8 +132,15 @@ function Blockquote() {
       
         animate={{
           scale: 1,
+          rotate:0
         }}
-        initial={{ scale: 0 }}
+        
+        whileHover={{
+           scale:1.05,
+           rotate:3
+        }}
+        initial={{ scale: 0, 
+        rotate:65}}
         className={`mt-11 md:mt-0 ${bgEffect} rounded-full h-80 w-80 overflow-visible`}
       >
         {/* <motion.img
