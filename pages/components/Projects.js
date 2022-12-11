@@ -17,7 +17,7 @@ function Projects({ scaleEffect }) {
       description:
         "Almiraj.com was a great client to work with. I was able to help them create a stunning landing page that was designed to engage visitors and generate leads. the response to the landing page has been overwhelmingly positive.",
       link: "https://almiraaj.com",
-      image: "url(../public/almiraaj.png)",
+      image: "url(../public/almiraaj2.png)",
     },
     // {
     //   id: 3,
@@ -33,7 +33,7 @@ function Projects({ scaleEffect }) {
       description:
         "NewsMonkey is a React app that gives you real-time news from anywhere in the world. It is configured with Newsapi to fetch news. You can also customize the news feed to get the news that you want.",
       link: "https://github.com/afrith03/NewsMonkey",
-      image: "url(../public/news-monkey.png)",
+      image: "url(../public/news-monkey2.png)",
     },
     {
       id: 4,
@@ -41,7 +41,7 @@ function Projects({ scaleEffect }) {
       description:
         "TextUtils is a React.js application to format your text by Capitalizing and other formatting options. It provides features like word count and time takes to read the paragraph, It is an open-source application",
       link: "https://text-utils-9fb3.netlify.app/",
-      image: "url(../public/text-utils.png)",
+      image: "url(../public/text-utils2.png)",
     },
   ];
   
@@ -58,7 +58,7 @@ function Projects({ scaleEffect }) {
         key={items.id}
         // drag
         // dragConstraints={{left:5,right:5 ,top:10 , bottom:10}}
-        className="relative rounded-2xl mx-2 my-4  md:mt-28 flex dark:bg-slate-700 bg-slate-50 max-w-3xl shadow-xl">
+        className="relative rounded-2xl mx-2 my-4  md:mt-28 flex dark:bg-slate-700 bg-slate-50 max-w-3xl shadow-xl dark:shadow-xxl dark:shadow-slate-800">
           {/* {(items.id % 2 == 0) ? "true" :"false"} */}
          
          {/* Image */}

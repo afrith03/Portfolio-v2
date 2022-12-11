@@ -175,7 +175,7 @@ function Contact({ scaleEffect }) {
         disabled={mailSentCount>=2}
           name="submit"
           id="submit"
-          className={`cursor-none hov rounded-full m-3  ${mailSentCount>=2 ?"bg-gradient-to-r from-slate-500 to-slate-400 hover:bg-gradient-to-r hover:from-slate-400 hover:to-slate-500": "bg-gradient-to-r from-cyan-500 to-teal-500 hover:bg-gradient-to-r hover:from-teal-500 hover:to-cyan-500"}  text-white shadow-xl px-4 py-2 
+          className={`cursor-none hov rounded-full m-3  ${mailSentCount>=2 ?"bg-gradient-to-r from-slate-500 to-slate-400 hover:bg-gradient-to-r hover:from-slate-400 hover:to-slate-500": "bg-gradient-to-r from-cyan-500 to-teal-500 hover:bg-gradient-to-r hover:from-teal-500 hover:to-cyan-500"}  text-white shadow-xl  dark:shadow-xl dark:shadow-black  px-4 py-2 
         ${firstHover ? "" : "animate-[wiggle_0.5s_ease-in-out_infinite]"}  
       `}
           // ${btnMove ? "right-32 " : "left-32"} ease-in transition-all
