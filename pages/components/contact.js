@@ -172,7 +172,7 @@ function Contact({ scaleEffect }) {
         </motion.label>
 
         <motion.button
-        //  disabled={mailSentCount >= 2}
+          //  disabled={mailSentCount >= 2}
           name="submit"
           id="submit"
           className={`hov rounded-full m-3  ${
@@ -202,7 +202,7 @@ function Contact({ scaleEffect }) {
             setfirstHover(true);
           }}
           onClick={() => {
-            if (isValidForm ||mailSentCount >= 2 ) {
+            if (isValidForm || mailSentCount >= 2) {
               setBtnMove(!btnMove);
             } else {
               setloading(true);
@@ -215,6 +215,11 @@ function Contact({ scaleEffect }) {
                     setisMailSentSuccess(true);
                     setmailSentCount(mailSentCount + 1);
                   }, 2500);
+                  setformInput({
+                    name: "",
+                    email: "",
+                    description: "",
+                  });
                 })
                 .catch(function (error) {
                   console.log(error);
@@ -243,7 +248,7 @@ function Contact({ scaleEffect }) {
               scale: loading ? 1 : 0,
             }}
             initial={{ scale: 0 }}
-            class={styles.spinner}
+            className={styles.spinner}
           ></motion.div>
         </div>
         <motion.label

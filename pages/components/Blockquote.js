@@ -71,7 +71,7 @@ function Blockquote() {
             <motion.button
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
-              className="rounded-full font-mono bg-gradient-to-r from-cyan-500 to-teal-500 hover:bg-gradient-to-r hover:from-teal-500 hover:to-cyan-500 focus:outline-none focus:ring focus:ring-sky-300 text-white px-4 py-2 flex"
+              className="rounded-full hov font-mono bg-gradient-to-r from-cyan-500 to-teal-500 hover:bg-gradient-to-r hover:from-teal-500 hover:to-cyan-500 focus:outline-none focus:ring focus:ring-sky-300 text-white px-4 py-2 flex"
             >
               Lets get started!
               <BsCursor className="m-1" />
