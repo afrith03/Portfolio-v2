@@ -215,11 +215,6 @@ function Contact({ scaleEffect }) {
                     setisMailSentSuccess(true);
                     setmailSentCount(mailSentCount + 1);
                   }, 2500);
-                  setformInput({
-                    name: "",
-                    email: "",
-                    description: "",
-                  });
                 })
                 .catch(function (error) {
                   console.log(error);
