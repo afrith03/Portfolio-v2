@@ -2,6 +2,11 @@ import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import axios from "axios";
 import styles from "../../styles/contact.module.css";
+import Filter from "bad-words";
+
+var filter = new Filter({ placeHolder: "x" });
+filter.addWords("lavade", "boobs", "ommala");
+
 function Contact({ scaleEffect }) {
   const inputStyleSuccess =
     "bg-green-50 border border-green-500 text-green-900 dark:text-green-400 placeholder-green-700 dark:placeholder-green-500 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5 dark:bg-gray-700 dark:border-green-500";
@@ -33,10 +38,14 @@ function Contact({ scaleEffect }) {
   function handleChange(evt) {
     const value =
       evt.target.type === "checkbox" ? evt.target.checked : evt.target.value;
+    filter.clean("some hells word!");
+
     setformInput({
       ...formInput,
-      [evt.target.name]: value,
+      [evt.target.name]:
+        value.trim().length === 0 ? value : filter.clean(value),
     });
+
     setfirstHover(true);
     console.log(formInput);
   }
@@ -85,6 +94,7 @@ function Contact({ scaleEffect }) {
           }
           name="name"
           id="name"
+          value={formInput.name}
           placeholder="What's your name?"
           onChange={handleChange}
         />
@@ -116,6 +126,7 @@ function Contact({ scaleEffect }) {
           pattern=""
           name="email"
           id="email"
+          value={formInput.email}
           placeholder="youremailaddress@here.please"
           onChange={handleChange}
         />
@@ -146,6 +157,7 @@ function Contact({ scaleEffect }) {
               : inputStyleNormal
           }
           name="description"
+          value={formInput.description}
           id="description"
           placeholder="What's in your mind?"
           onChange={handleChange}

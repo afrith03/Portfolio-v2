@@ -18,7 +18,7 @@ function Navbar({ darkMode, setDarkMode }) {
               className={styles.dn}
               id="dn"
               checked={darkMode}
-              onClick={() => {
+              onChange={() => {
                 setDarkMode(!darkMode);
               }}
             />
