@@ -5,7 +5,24 @@ import styles from "../../styles/contact.module.css";
 import Filter from "bad-words";
 
 var filter = new Filter({ placeHolder: "x" });
-filter.addWords("lavade", "boobs", "ommala","gotha","punda","otha","sunni","soothu","pundamavan","badu","kunji","racistmotherfucker","motherfucker","mothafucka","sucker","OMMALA");
+filter.addWords(
+  "lavade",
+  "boobs",
+  "ommala",
+  "gotha",
+  "punda",
+  "otha",
+  "sunni",
+  "soothu",
+  "pundamavan",
+  "badu",
+  "kunji",
+  "racistmotherfucker",
+  "motherfucker",
+  "mothafucka",
+  "sucker",
+  "OMMALA"
+);
 
 function Contact({ scaleEffect }) {
   const inputStyleSuccess =

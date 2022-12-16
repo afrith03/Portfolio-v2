@@ -53,12 +53,14 @@ function Navbar({ darkMode, setDarkMode }) {
           )}
         </button> */}
         <li>
-          <button
+         <a href="../Afrith's Resume.pdf" target="_blank" rel="noopener noreferrer">
+         <button
             className="animate-[wiggle_10s_ease-in-out_infinite] font-mono bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8 flex"
             href="#"
           >
             Resume <BsClipboardData className="m-1" />
           </button>
+         </a>
 
           {/* <button className={styles["download-button"]}>
             <div className={styles.docs}>
