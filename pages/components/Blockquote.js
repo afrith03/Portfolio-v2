@@ -78,7 +78,8 @@ function Blockquote() {
             </motion.button>
           </Link>
           <a
-            href="https://account.servicenow.com/personal-data/11ecd280b/7ae69f488/540637b41/5ed11T2MD/resume.html"
+           // href="https://account.servicenow.com/personal-data/11ecd280b/7ae69f488/540637b41/5ed11T2MD/resume.html"
+           href="https://www.servicenow.com/community/user/viewprofilepage/user-id/276492"
             target="_blank"  rel="noreferrer" 
             title="View Afrith's Profile in ServiceNow style"
           >
