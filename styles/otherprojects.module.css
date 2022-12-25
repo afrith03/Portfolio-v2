@@ -1,0 +1,50 @@
+.card {
+    width: 29rem;
+    cursor: pointer;
+border-radius: 24px;
+  }
+  
+  .content {
+    text-align: center;
+    position: relative;
+    transition: all 0.8s;
+    background-color: rgb(127, 204, 240);
+    padding: 8em;
+    transform-style: preserve-3d;
+    border-radius: 16px;
+  }
+  
+  .card:hover .content {
+    transform: rotateY(0.5turn);
+  }
+  
+  .front,
+  .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 1em;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+  }
+  
+  .title {
+    transform: translateZ(5rem);
+    font-size: 2rem;
+  }
+  
+  .subtitle {
+    transform: translateZ(2rem);
+  }
+  
+  .back {
+    transform: rotateY(0.5turn);
+    background-color: #009bff;
+  }
+  
+  .description {
+    transform: translateZ(3rem);
+  }
+  

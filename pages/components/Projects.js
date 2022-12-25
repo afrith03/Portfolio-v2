@@ -3,9 +3,17 @@ import { motion } from "framer-motion";
 function Projects({ scaleEffect }) {
 
   const ProjectArray = [
-   
     {
       id: 1,
+      title: "Dyootify",
+      description:
+        "Dyootify is a multiplatform mobile app music player built with capacitor js. It offers wide of music from various Languages to listen and Hey! it free to use just install the android app or just use the web version",
+      link: "https://dyootify.netlify.app",
+      image: "url(../public/dyootify.png)",
+    },
+   
+    {
+      id: 2,
       title: "Al-Miraaj.com",
       description:
         "Almiraj.com was a great client to work with. I was able to help them create a stunning landing page that was designed to engage visitors and generate leads. the response to the landing page has been overwhelmingly positive.",
@@ -13,7 +21,7 @@ function Projects({ scaleEffect }) {
       image: "url(../public/almiraaj2.png)",
     },
     {
-      id: 2,
+      id: 3,
       title: "Myth's Player",
       description:
         "Myth's player is a modern, lightweight web music player that combines the flexibility of HTML, CSS, and JavaScript. also supports features such as shuffle, repeat, and more.",
@@ -29,7 +37,7 @@ function Projects({ scaleEffect }) {
     //   image: "url(../public/afrith-js.png)",
     // },
     {
-      id: 3,
+      id: 4,
       title: "News Monkey",
       description:
         "NewsMonkey is a React app that gives you real-time news from anywhere in the world. It is configured with Newsapi to fetch news. You can also customize the news feed to get the news that you want.",
@@ -37,7 +45,7 @@ function Projects({ scaleEffect }) {
       image: "url(../public/news-monkey2.png)",
     },
     {
-      id: 4,
+      id: 5,
       title: "Text Utils",
       description:
         "TextUtils is a React.js application to format your text by Capitalizing and other formatting options. It provides features like word count and time takes to read the paragraph, It is an open-source application",

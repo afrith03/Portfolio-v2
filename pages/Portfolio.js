@@ -8,6 +8,7 @@ import Blockquote from "./components/Blockquote";
 import Navbar from "./components/Navbar";
 import Footer from "./components/footer";
 import FixedBtn from "./components/fixedbtn";
+import OtherProjects from "./components/OtherProjects";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
@@ -79,6 +80,7 @@ export default function Home() {
           </section>
 
           <Projects scaleEffect={scaleEffect} />
+          {/* <OtherProjects/> */}
 
           <Contact scaleEffect={scaleEffect} />
           <Footer />

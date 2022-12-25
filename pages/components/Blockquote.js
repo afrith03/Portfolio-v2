@@ -138,7 +138,7 @@ function Blockquote() {
         
         whileHover={{
            scale:1.05,
-           rotate:3
+           rotate:2
         }}
         initial={{ scale: 0, 
         rotate:65}}

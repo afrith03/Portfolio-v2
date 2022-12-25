@@ -79,7 +79,7 @@ const Cursor = () => {
   // if (typeof navigator !== "undefined" && isMobile()) return (<div></div>);
   return (
     <>
-      <div className="bg-[url(../public/music-player.png)] bg-[url(../public/almiraaj2.png)] bg-[url(../public/afrith-js.png)] bg-[url(../public/news-monkey2.png)] bg-[url(../public/text-utils2.png)] bg-[] bg-[]"></div>
+      <div className="bg-[url(../public/music-player.png)] bg-[url(../public/almiraaj2.png)] bg-[url(../public/afrith-js.png)] bg-[url(../public/news-monkey2.png)] bg-[url(../public/text-utils2.png)] bg-[url(../public/dyootify.png)] bg-[]"></div>
       <div
         className={`${cursorClasses} hidden md:block`}
         style={{ left: `${position.x}px`, top: `${position.y}px` }}
