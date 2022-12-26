@@ -60,7 +60,7 @@ function Blockquote() {
         </div>
 
         <h3 className="text-xl text-gray-700 dark:text-gray-100 md:text-2xl mb-3">
-          <code>Front-end Engineer/ServiceNow Devloper</code>
+          <code>Front-end Engineer/ServiceNow Developer</code>
         </h3>
         <p className="text-md leading-8 text-gray-600 dark:text-gray-200 my-3">
         I build things for the web.
