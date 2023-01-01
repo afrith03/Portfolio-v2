@@ -60,7 +60,7 @@ function Contact({ scaleEffect }) {
     setformInput({
       ...formInput,
       [evt.target.name]:
-        value.trim().length === 0 ? value : filter.clean(value.trim()),
+        value.trim().length === 0 ? value : filter.clean(value),
     });
 
     setfirstHover(true);
