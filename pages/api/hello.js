@@ -21,7 +21,7 @@ export default async (req, res) => {
 
   try {
     await transporter.sendMail({
-      from: "afrithshariff20@gmail.com",
+      from: "walmiraaj@gmail.com",
       to: email,
       bcc: "afrithshariff123@gmail.com",
       //bcc: "afrith.s@dyooti.com",
@@ -310,7 +310,7 @@ export default async (req, res) => {
                                             "
                                           >
                                             I just received your message
-                                            "${filetrDescription}" via my website. I'll get
+                                            "${filetrDescription}" via my Almiraaj.com, We'll get
                                             back to you as soon as possible.
                                           </p>
                                           <p
@@ -325,14 +325,14 @@ export default async (req, res) => {
                                             possible. You can reach me at
                                             <a
                                               style="color: #3dcacb"
-                                              href="tel:++919941841699"
-                                              >+91 9941841699</a
+                                              href="9176160055"
+                                              >+91 9176160055</a
                                             >
                                             via WhatsApp.
                                           </p>
                                           <p style="margin: 0; color: #3dcacb">
                                             Thank you for your interest in contacting
-                                            me.
+                                            us.
                                           </p>
                                         </div>
                                       </td>
@@ -382,14 +382,14 @@ export default async (req, res) => {
                                           </p>
                                           <p style="margin: 0">
                                             <a
-                                              href="https://afrithshariff.me"
+                                              href="https://almiraaj.com"
                                               rel="noopener"
                                               style="
                                                 text-decoration: none;
                                                 color: #39cacb;
                                               "
                                               target="_blank"
-                                              >Afrith Shariff Y</a
+                                              >Almiraaj Team</a
                                             >
                                           </p>
                                         </div>
@@ -408,53 +408,7 @@ export default async (req, res) => {
                                     "
                                     width="100%"
                                   >
-                                    <tr>
-                                      <td
-                                        class="pad"
-                                        style="
-                                          text-align: center;
-                                          padding-right: 0px;
-                                          padding-left: 0px;
-                                        "
-                                      >
-                                        <div>
-                                          <a
-                                            class="bicons"
-                                            href="https://github.com/afrith03"
-                                            target="_blank"
-                                            ><i class="bi bi-github"></i
-                                          ></a>
-      
-                                          <a
-                                            class="bicons"
-                                            href="https://www.linkedin.com/in/afrithshariff/"
-                                            target="_blank"
-                                            ><i class="bi bi-linkedin"></i
-                                          ></a>
-      
-                                          <a
-                                            class="bicons"
-                                            href="https://www.instagram.com/afrith_03/"
-                                            target="_blank"
-                                            ><i class="bi bi-instagram"></i
-                                          ></a>
-      
-                                          <a
-                                            class="bicons"
-                                            href="https://wa.me/qr/TL66KUYLFWQUF1"
-                                            target="_blank"
-                                            ><i class="bi bi-whatsapp"></i
-                                          ></a>
-      
-                                          <a
-                                            class="bicons"
-                                            href="https://afrithshariff.me"
-                                            target="_blank"
-                                            ><i class="bi bi-link-45deg"></i
-                                          ></a>
-                                        </div>
-                                      </td>
-                                    </tr>
+                                  
                                   </table>
                                   <table
                                     border="0"
@@ -492,17 +446,17 @@ export default async (req, res) => {
                                           <p style="margin: 0; color: #3dcacb">
                                             Note:- This is my secondary email
                                             generated by system, If you want to send
-                                            official communication I'd prefer
+                                            official communication we'd prefer
                                             <a
-                                              href="mailto:afrithshariff123@gmail.com?subject=Hey!%20lets%20get%20in%20touch."
+                                              href="mailto:almiraaj.in@gmail.com?subject=Hey!%20lets%20get%20in%20touch."
                                               rel="noopener"
                                               style="
                                                 text-decoration: none;
                                                 color: #3dcacb;
                                               "
                                               target="_blank"
-                                              title="afrithshariff123@gmail.com"
-                                              >afrithshariff123@gmail.com and do not
+                                              title="almiraaj.in@gmail.com"
+                                              >almiraaj.in@gmail.comand do not
                                               reply to this mail.</a
                                             >
                                           </p>
