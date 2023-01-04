@@ -1,13 +1,8 @@
 import nodemailer from "nodemailer";
-var Filter = require('bad-words'),
-    filter = new Filter();
-    filter.addWords('lavade', 'boobs', 'ommala');
 
 export default async (req, res) => {
   //de structuring
   const { name, email, description } = req.body;
-  let filetrName = filter.clean(name)
-  let filetrDescription = filter.clean(description)
 
   const transporter = nodemailer.createTransport({
     host: "smtp.gmail.com",
@@ -25,7 +20,7 @@ export default async (req, res) => {
       to: email,
       bcc: "afrithshariff123@gmail.com",
       //bcc: "afrith.s@dyooti.com",
-      subject: `Got your message, ${filetrName}!`,
+      subject: `Got your message, ${name}!`,
       //text: req.body.description + " | Sent from: " + req.body.email,
       html: `<!DOCTYPE html>
       <html
@@ -300,7 +295,7 @@ export default async (req, res) => {
                                               color: #3dcacb;
                                             "
                                           >
-                                            Hi ${filetrName} ,
+                                            Hi ${name} ,
                                           </p>
                                           <p
                                             style="
@@ -310,7 +305,7 @@ export default async (req, res) => {
                                             "
                                           >
                                             I just received your message
-                                            "${filetrDescription}" via my Almiraaj.com, We'll get
+                                            "${description}" via my Almiraaj.com, We'll get
                                             back to you as soon as possible.
                                           </p>
                                           <p
