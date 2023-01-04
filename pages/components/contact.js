@@ -260,7 +260,7 @@ function Contact({ scaleEffect }) {
                 ? "uh oh! you've clicked a lot!"
                 : "Success! wanna send again?"
               : isMailSentSuccess == null
-              ? "Send a mail!"
+              ? "Send mail!"
               : "Oh snap! something is wrong,"
             : "Try me!"}
         </motion.button>
