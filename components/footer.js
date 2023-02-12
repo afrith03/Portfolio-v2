@@ -2,7 +2,7 @@ import React from "react";
 import { AiFillCopyrightCircle, AiOutlineGithub } from "react-icons/ai";
 const Footer = () => {
   return (<div className="p-5">
-    <div className="text-center text-sm md:text-md dark:text-white">
+    <div className="text-center text-sm md:text-md dark:text-white text-slate-700">
       <p className="inline-flex">
         Designed & Built by
         <span>

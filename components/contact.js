@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import axios from "axios";
-import styles from "../../styles/contact.module.css";
+import styles from "../styles/contact.module.css";
 import Filter from "bad-words";
 
 var filter = new Filter({ placeHolder: "x" });

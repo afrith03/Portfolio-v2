@@ -1,5 +1,4 @@
 import React from "react";
-import npm from "../../public/afrith-js.png";
 import Image from "next/image";
 function OtherProjects({ scaleEffect }) {
   const otherProjects = [
@@ -32,7 +31,7 @@ function OtherProjects({ scaleEffect }) {
       source: "https://www.npmjs.com/package/afrith",
     },
     {
-      id: 5,
+      id: 4,
       title: "Text Utils",
       description:
         "TextUtils is a React.js application to format your text by Capitalizing and other formatting options. It provides features like word count and time takes to read the paragraph, It is an open-source application",
@@ -54,15 +53,20 @@ function OtherProjects({ scaleEffect }) {
           <div className="carousel-item flex-col justify-between gap-2"
           key={index}>
             <div className="card w-80 shadow-xl bg-slate-50 dark:bg-slate-700 dark:text-white">
-              <figure className="px-3 pt-3">
-                <img
+              <figure className="px-3 pt-3 shadow-xl">
+              <div className="relative h-44 w-full">
+              <Image
+                layout="fill"
+                placeholder="blur"
+                blurDataURL="/logo-2.png"
                   src={items.image}
                   alt={items.description}
                   className="rounded-xl"
                 />
+              </div>
               </figure>
               <div className="card-body pb-4 items-center dark:text-white text-slate-700">
-                <h2 className="card-title ">{items.title}</h2>
+                <h2 className="card-title font-bold">{items.title}</h2>
                 <p>{items.description}</p>
                 <div className="card-actions mt-3 flex items-end justify-between">
                   <a href={items.link} target="_blank" rel="noreferrer">

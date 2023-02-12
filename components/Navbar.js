@@ -4,7 +4,7 @@ import {
   BsCloudSun,
   BsClipboardData,
 } from "react-icons/bs";
-import styles from "../../styles/navbar.module.css";
+import styles from "../styles/navbar.module.css";
 
 function Navbar({ darkMode, setDarkMode }) {
   return (

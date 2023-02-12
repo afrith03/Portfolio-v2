@@ -105,7 +105,7 @@ function Projects({ scaleEffect }) {
             </figure>
             <div className="card-body">
               <h1 className="card-title text-2xl">{itemsMob.title}</h1>
-              <p>{itemsMob.description}</p>
+              <p className="text-slate-50">{itemsMob.description}</p>
               <div className="card-actions justify-end">
                 <a href={itemsMob.link} target="_blank" rel="noreferrer">
                   <button

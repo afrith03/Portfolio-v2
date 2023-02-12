@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { AiFillLinkedin, AiOutlineGithub } from "react-icons/ai";
 import { BsCursor, BsInstagram } from "react-icons/bs";
-import deved from "../../public/afrith-cropped-2.png";
+import deved from "../public/afrith-cropped-2.png";
 import Image from "next/image";
 import Link from "next/link";
 function Blockquote() {

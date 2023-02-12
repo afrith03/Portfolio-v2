@@ -1,14 +1,14 @@
 import Head from "next/head";
 import { useState } from "react";
 
-import Projects from "./components/Projects";
-import Contact from "./components/contact";
-import About from "./components/About";
-import Blockquote from "./components/Blockquote";
-import Navbar from "./components/Navbar";
-import Footer from "./components/footer";
-import FixedBtn from "./components/fixedbtn";
-import OtherProjects from "./components/OtherProjects";
+import Projects from "/components/Projects";
+import Contact from "/components/contact";
+import About from "/components/About";
+import Blockquote from "/components/Blockquote";
+import Navbar from "/components/Navbar";
+import Footer from "/components/footer";
+import FixedBtn from "/components/fixedbtn";
+import OtherProjects from "/components/OtherProjects";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
