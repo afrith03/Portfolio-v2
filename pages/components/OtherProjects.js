@@ -61,8 +61,8 @@ function OtherProjects({ scaleEffect }) {
                   className="rounded-xl"
                 />
               </figure>
-              <div className="card-body pb-4 items-center">
-                <h2 className="card-title">{items.title}</h2>
+              <div className="card-body pb-4 items-center dark:text-white text-slate-700">
+                <h2 className="card-title ">{items.title}</h2>
                 <p>{items.description}</p>
                 <div className="card-actions mt-3 flex items-end justify-between">
                   <a href={items.link} target="_blank" rel="noreferrer">

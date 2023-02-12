@@ -84,8 +84,8 @@ function Contact({ scaleEffect }) {
 
   return (
     <>
-      <div className="mt-28">
-        <h1 className="text-3xl py-1 font-bold dark:text-white ">
+      <div className="mt-28 dark:text-white text-slate-700">
+        <h1 className="text-3xl py-1 font-bold  ">
           Contact Me!
         </h1>
         <p
