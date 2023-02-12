@@ -44,14 +44,6 @@ function Projects({ scaleEffect }) {
       link: "https://github.com/afrith03/NewsMonkey",
       image: "/news-monkey2.png",
     },
-    {
-      id: 5,
-      title: "Text Utils",
-      description:
-        "TextUtils is a React.js application to format your text by Capitalizing and other formatting options. It provides features like word count and time takes to read the paragraph, It is an open-source application",
-      link: "https://text-utils-9fb3.netlify.app/",
-      image: "/text-utils2.png",
-    },
   ];
 
   return (
