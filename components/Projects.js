@@ -107,10 +107,19 @@ function Projects({ scaleEffect }) {
         {ProjectArray.map((itemsMob) => (
           <motion.div
             key={itemsMob.id}
-            className="card sm:w-96 bg-base-800 shadow-xl image-full mt-4"
+            className="card rounded-xl sm:w-96 bg-base-800 shadow-xl image-full mt-4"
           >
             <figure>
-              <img src={itemsMob.image} alt={itemsMob.description} />
+              <Image
+                layout="fill"
+                loading="lazy"
+                quality={25}
+                placeholder="blur"
+                blurDataURL="/solid2.png"
+                className="rounded-2xl"
+                src={itemsMob.image}
+                alt={itemsMob.description}
+              />
             </figure>
             <div className="card-body">
               <h1 className="card-title text-2xl">{itemsMob.title}</h1>
