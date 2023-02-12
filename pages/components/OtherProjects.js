@@ -49,9 +49,10 @@ function OtherProjects({ scaleEffect }) {
 
       {/* carousel  */}
       <div className="carousel p-2 w-full space-x-4 bg-slate-200 dark:bg-slate-800 carousel-center  rounded-box">
-        {otherProjects.map((items) => (
+        {otherProjects.map((items,index) => (
           // <div className="mockup-window border bg-base-300 h-[430px]">
-          <div className="carousel-item flex-col justify-between gap-2">
+          <div className="carousel-item flex-col justify-between gap-2"
+          key={index}>
             <div className="card w-80 shadow-xl bg-slate-50 dark:bg-slate-700 dark:text-white">
               <figure className="px-3 pt-3">
                 <img
