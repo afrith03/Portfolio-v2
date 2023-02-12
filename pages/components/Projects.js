@@ -84,6 +84,7 @@ function Projects({ scaleEffect }) {
             </div>
             <img
               src={items.image}
+            alt={items.description}
               //  style={{background: items.image}}
               className={`md:w-[50%] shadow-inherit absolute h-72 md:h-80 lg:h-72 ${
                 items.id % 2 == 0 ? "right-6" : "left-6"
