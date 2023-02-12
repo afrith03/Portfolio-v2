@@ -53,7 +53,7 @@ function OtherProjects({ scaleEffect }) {
           // <div className="mockup-window border bg-base-300 h-[430px]">
           <div className="carousel-item flex-col justify-between gap-2">
             <div className="card w-80 shadow-xl bg-slate-50 dark:bg-slate-700 dark:text-white">
-              <figure className="px-5 pt-5">
+              <figure className="px-3 pt-3">
                 <img
                   src={items.image}
                   alt={items.description}

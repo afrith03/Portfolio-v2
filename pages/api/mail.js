@@ -382,7 +382,7 @@ export default async (req, res) => {
                                           </p>
                                           <p style="margin: 0">
                                             <a
-                                              href="https://afrithshariff.me"
+                                              href="https://afrith.me"
                                               rel="noopener"
                                               style="
                                                 text-decoration: none;
@@ -448,7 +448,7 @@ export default async (req, res) => {
       
                                           <a
                                             class="bicons"
-                                            href="https://afrithshariff.me"
+                                            href="https://afrith.me"
                                             target="_blank"
                                             ><i class="bi bi-link-45deg"></i
                                           ></a>

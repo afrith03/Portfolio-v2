@@ -18,10 +18,10 @@ function MyApp({ Component, pageProps }) {
 
   <meta property="og:title" content="About me - Afrith Shariff Y" />
   <meta property="og:type" content="profile" />
-  <meta property="og:url" content="https://afrithshariff.me" />
+  <meta property="og:url" content="https://afrith.me" />
   <meta
     property="og:image"
-    content="https://afrithshariff.me/afrith-logo-bg.png"
+    content="https://afrith.me/afrith-logo-bg.png"
   />
   <meta property="og:site_name" content="Afrith's Portfolio website" />
   <meta
