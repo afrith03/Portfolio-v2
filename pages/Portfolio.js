@@ -80,7 +80,7 @@ export default function Home() {
           </section>
 
           <Projects scaleEffect={scaleEffect} />
-          {/* <OtherProjects/> */}
+          <OtherProjects/>
 
           <Contact scaleEffect={scaleEffect} />
           <Footer />

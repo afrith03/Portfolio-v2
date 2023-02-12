@@ -6,23 +6,21 @@ const { useState, useEffect } = React;
 //   return /Android|Mobi/i.test(ua);
 // };
 const Cursor = () => {
-
-  
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const [clicked, setClicked] = useState(false);
   const [linkHovered, setLinkHovered] = useState(false);
   const [hidden, setHidden] = useState(false);
-  
+
   useEffect(() => {
-   handleLinkHoverEvents();
-    addEventListeners(); 
+    handleLinkHoverEvents();
+    addEventListeners();
     return () => removeEventListeners();
   }, []);
-  
+
   // useEffect(() => {
   //   handleLinkHoverEvents();
   // }, [clicked]);
-  
+
   const addEventListeners = () => {
     document.addEventListener("mousemove", onMouseMove);
     document.addEventListener("mouseenter", onMouseEnter);
@@ -38,14 +36,14 @@ const Cursor = () => {
     document.removeEventListener("mousedown", onMouseDown);
     document.removeEventListener("mouseup", onMouseUp);
   };
-  
+
   const onMouseMove = (e) => {
     setPosition({
       x: e.clientX,
       y: e.clientY,
     });
   };
-  
+
   const onMouseDown = () => {
     setClicked(true);
   };
@@ -53,11 +51,11 @@ const Cursor = () => {
   const onMouseUp = () => {
     setClicked(false);
   };
-  
+
   const onMouseLeave = () => {
     setHidden(true);
   };
-  
+
   const onMouseEnter = () => {
     setHidden(false);
   };
@@ -75,16 +73,13 @@ const Cursor = () => {
   const cursorClasses = `cursor ${clicked && " cursor--clicked "} ${
     hidden && "cursor--hidden"
   } ${linkHovered && "cursor--link-hovered"}`;
-  
+
   // if (typeof navigator !== "undefined" && isMobile()) return (<div></div>);
   return (
-    <>
-      <div className="bg-[url(../public/music-player.png)] bg-[url(../public/almiraaj2.png)] bg-[url(../public/afrith-js.png)] bg-[url(../public/news-monkey2.png)] bg-[url(../public/text-utils2.png)] bg-[url(../public/dyootify.png)] bg-[]"></div>
-      <div
-        className={`${cursorClasses} hidden md:block`}
-        style={{ left: `${position.x}px`, top: `${position.y}px` }}
-      />
-    </>
+    <div
+      className={`${cursorClasses} hidden md:block`}
+      style={{ left: `${position.x}px`, top: `${position.y}px` }}
+    />
   );
 };
 
