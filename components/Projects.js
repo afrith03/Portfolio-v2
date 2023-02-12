@@ -82,14 +82,23 @@ function Projects({ scaleEffect }) {
                 </button>
               </a>
             </div>
-            <img
-              src={items.image}
-            alt={items.description}
-              //  style={{background: items.image}}
-              className={`md:w-[50%] shadow-inherit absolute h-72 ${
+            <div
+              className={`md:w-[50%]  shadow-inherit absolute h-72 ${
                 items.id % 2 == 0 ? "right-6" : "left-6"
-              } bottom-0 rounded-t-2xl ${scaleEffect} `}
-            ></img>
+              } bottom-0  ${scaleEffect} `}
+            >
+              <Image
+                layout="fill"
+                src={items.image}
+                alt={items.description}
+                loading="lazy"
+                quality={100}
+                placeholder="blur"
+                blurDataURL="/solid2.png"
+                //  style={{background: items.image}}
+                className="rounded-t-2xl"
+              ></Image>
+            </div>
           </motion.div>
         ))}
       </div>

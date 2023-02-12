@@ -37,7 +37,7 @@ function OtherProjects({ scaleEffect }) {
         "TextUtils is a React.js application to format your text by Capitalizing and other formatting options. It provides features like word count and time takes to read the paragraph, It is an open-source application",
       link: "https://text-utils-9fb3.netlify.app/",
       image: "/text-utils2.png",
-      source:"https://github.com/afrith03/text-tool"
+      source: "https://github.com/afrith03/text-tool",
     },
   ];
   return (
@@ -48,22 +48,25 @@ function OtherProjects({ scaleEffect }) {
 
       {/* carousel  */}
       <div className="carousel p-2 w-full space-x-4 bg-slate-200 dark:bg-slate-800 carousel-center  rounded-box">
-        {otherProjects.map((items,index) => (
+        {otherProjects.map((items, index) => (
           // <div className="mockup-window border bg-base-300 h-[430px]">
-          <div className="carousel-item flex-col justify-between gap-2"
-          key={index}>
+          <div
+            className="carousel-item flex-col justify-between gap-2"
+            key={index}
+          >
             <div className="card w-80 shadow-xl bg-slate-50 dark:bg-slate-700 dark:text-white">
-              <figure className="px-3 pt-3 shadow-xl">
-              <div className="relative h-44 w-full">
-              <Image
-                layout="fill"
-                placeholder="blur"
-                blurDataURL="/logo-2.png"
-                  src={items.image}
-                  alt={items.description}
-                  className="rounded-xl"
-                />
-              </div>
+              <figure className="px-3 pt-3 ">
+                <div className="relative h-44 w-full shadow-xl">
+                  <Image
+                    layout="fill"
+                    placeholder="blur"
+                    blurDataURL="/solid3.png"
+                    loading="lazy"
+                    src={items.image}
+                    alt={items.description}
+                    className="rounded-xl"
+                  />
+                </div>
               </figure>
               <div className="card-body pb-4 items-center dark:text-white text-slate-700">
                 <h2 className="card-title font-bold">{items.title}</h2>
