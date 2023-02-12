@@ -1,8 +1,7 @@
 import { Document } from "postcss";
 import React from "react";
-import Cursor from "./components/Cursor";
-import Spinner from "./components/Spinner";
-import Portfolio from "./Portfolio";
+import Cursor from "/components/Cursor";
+import Portfolio from "/Portfolio";
 const { useState, useEffect } = React;
 
 export default function Index() {
