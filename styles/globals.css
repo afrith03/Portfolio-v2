@@ -3,20 +3,18 @@
 @tailwind utilities;
 
 html {
-   scroll-behavior: smooth;
- }
+  scroll-behavior: smooth;
+}
 html,
 body {
   padding: 0;
   margin: 0;
   cursor: none;
   /* background-color: linear-gradient(to bottom right, #ffdb01,#0e197d) !important; */
-  background-image: linear-gradient(to bottom right, #ffffff,#80dbff);
+  background-image: linear-gradient(to bottom right, #ffffff, #80dbff);
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
-
-
 
 a {
   color: inherit;
@@ -65,78 +63,74 @@ a {
 
 /* for image  */
 
-.afrith{
-
-   /* top: -408px !important;
+.afrith {
+  /* top: -408px !important;
    scale: 1.1;
    border-radius: 0% 0% 50% 50% / 0% 0% 37% 37%; */
 
-   
-   /* top: -205px;
+  /* top: -205px;
    border-radius: 0% 0% 50% 50% / 0% 0% 37% 37%; */
-/* cropped 2  */
-top: -44px !important;
-    scale: 1.1;
-    border-radius: 0% 0% 50% 50% / 0% 0% 56% 56%;
-
+  /* cropped 2  */
+  top: -44px !important;
+  scale: 1.1;
+  border-radius: 0% 0% 50% 50% / 0% 0% 56% 56%;
 }
-span{
-   overflow: visible !important;
+span {
+  overflow: visible !important;
 }
-.webkit{
-   text-align: -webkit-center;
-
+.webkit {
+  text-align: -webkit-center;
 }
 /* loader */
 
 .spinner {
-   position: relative;
-   width: 15.7px;
-   position: fixed;
-   height: 15.7px;
-   z-index: 999999;
+  position: relative;
+  width: 15.7px;
+  position: fixed;
+  height: 15.7px;
+  z-index: 999999;
 }
 
 .spinner div {
-   width: 100%;
-   height: 100%;
-   background-color: #0a81ff;
-   border-radius: 50%;
-   animation: spinner-4t3wzl 1.25s infinite backwards;
+  width: 100%;
+  height: 100%;
+  background-color: #0a81ff;
+  border-radius: 50%;
+  animation: spinner-4t3wzl 1.25s infinite backwards;
 }
 
 .spinner div:nth-child(1) {
-   animation-delay: 0.15s;
-   background-color: rgba(10,129,255,0.9);
+  animation-delay: 0.15s;
+  background-color: rgba(10, 129, 255, 0.9);
 }
 
 .spinner div:nth-child(2) {
-   animation-delay: 0.3s;
-   background-color: rgba(10,129,255,0.8);
+  animation-delay: 0.3s;
+  background-color: rgba(10, 129, 255, 0.8);
 }
 
 .spinner div:nth-child(3) {
-   animation-delay: 0.45s;
-   background-color: rgba(10,129,255,0.7);
+  animation-delay: 0.45s;
+  background-color: rgba(10, 129, 255, 0.7);
 }
 
 .spinner div:nth-child(4) {
-   animation-delay: 0.6s;
-   background-color: rgba(10,129,255,0.6);
+  animation-delay: 0.6s;
+  background-color: rgba(10, 129, 255, 0.6);
 }
 
 .spinner div:nth-child(5) {
-   animation-delay: 0.75s;
-   background-color: rgba(10,129,255,0.5);
+  animation-delay: 0.75s;
+  background-color: rgba(10, 129, 255, 0.5);
 }
 
 @keyframes spinner-4t3wzl {
-   0% {
-      transform: rotate(0deg) translateY(-200%);
-   }
+  0% {
+    transform: rotate(0deg) translateY(-200%);
+  }
 
-   60%, 100% {
-      transform: rotate(360deg) translateY(-200%);
-   }
+  60%,
+  100% {
+    transform: rotate(360deg) translateY(-200%);
+  }
 }
-

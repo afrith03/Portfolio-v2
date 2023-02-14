@@ -28,14 +28,6 @@ function Projects({ scaleEffect }) {
       link: "https://afrith03.github.io/musicplayer/",
       image: "/music-player.png",
     },
-    // {
-    //   id: 3,
-    //   title: "Afrith.js",
-    //   description:
-    //     "afrith.js is a lightweight, easy-to-use npm package. It will make you console look a little colourful Check this out if you are a fan of 'Vaigai puyal'",
-    //   link: "https://socket.dev/npm/package/afrith",
-    //   image: "url(/afrith-js.png)",
-    // },
     {
       id: 4,
       title: "News Monkey",
@@ -91,7 +83,7 @@ function Projects({ scaleEffect }) {
                 layout="fill"
                 src={items.image}
                 alt={items.description}
-                loading="lazy"
+                // loading="lazy"
                 quality={100}
                 placeholder="blur"
                 blurDataURL="/solid2.png"
@@ -112,7 +104,7 @@ function Projects({ scaleEffect }) {
             <figure>
               <Image
                 layout="fill"
-                loading="lazy"
+                // loading="lazy"
                 quality={25}
                 placeholder="blur"
                 blurDataURL="/solid2.png"

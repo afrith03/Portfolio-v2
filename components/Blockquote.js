@@ -156,7 +156,7 @@ function Blockquote() {
         <Image
         
         src={deved}
-        className="relative afrith"
+        className="relative afrith z-10"
         placeholder="blur"
         alt="Picture of the afrith (developer)"
         priority

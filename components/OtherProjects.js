@@ -54,9 +54,9 @@ function OtherProjects({ scaleEffect }) {
             className="carousel-item flex-col justify-between gap-2"
             key={index}
           >
-            <div className="card w-80 shadow-xl bg-slate-50 dark:bg-slate-700 dark:text-white">
-              <figure className="px-3 pt-3 ">
-                <div className="relative h-44 w-full shadow-xl">
+            <div className="card w-80 px-3 pt-3 shadow-xl bg-slate-50 dark:bg-slate-700 dark:text-white">
+              <figure className=" rounded-xl shadow-xl">
+                <div className="relative h-44 w-full rounded-xl ">
                   <Image
                     layout="fill"
                     placeholder="blur"
@@ -68,7 +68,7 @@ function OtherProjects({ scaleEffect }) {
                   />
                 </div>
               </figure>
-              <div className="card-body pb-4 items-center dark:text-white text-slate-700">
+              <div className="card-body p-5 items-center dark:text-white text-slate-700">
                 <h2 className="card-title font-bold">{items.title}</h2>
                 <p>{items.description}</p>
                 <div className="card-actions mt-3 flex items-end justify-between">

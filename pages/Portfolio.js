@@ -9,6 +9,7 @@ import Navbar from "/components/Navbar";
 import Footer from "/components/footer";
 import FixedBtn from "/components/fixedbtn";
 import OtherProjects from "/components/OtherProjects";
+import Birds from "../components/Birds";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
@@ -43,16 +44,20 @@ export default function Home() {
             property="og:description"
             content="Hi, I’m Afrith! I’m a developer with in-depth experience in React and ServiceNow. I create websites that help organizations address business challenges and meet their needs. My expertise lies within front-end web apps, and the main languages in my tech stack are JavaScript , React , and HTML/CSS. I’m a lifelong learner (currently taking ServiceNow Development as the primary focus!) and love to read, code, and find new inspiration in nature.  I offer from a wide range of services, including brand design, programming and teaching."
           />
-          <meta name="robots" content="index, Afrith,afrith, afrith portfolio,portfolio afrith,servicenow afrith, afrith service now,Afrith shariff,Afrith Shariff, afrith shariff y,afrith shariff me, react, servicenow, afrith, inspiration, currently, taking, development,Afrith shariff,Shariff attaya,Afrikah smith,Afreen shariff,Afr sharathon,Sharif.atkins,Harga batu akik merah delima,Sharif atkins wife,Sharif atkins er,Sharif atkins instagram" />
+          <meta
+            name="robots"
+            content="index, Afrith,afrith, afrith portfolio,portfolio afrith,servicenow afrith, afrith service now,Afrith shariff,Afrith Shariff, afrith shariff y,afrith shariff me, react, servicenow, afrith, inspiration, currently, taking, development,Afrith shariff,Shariff attaya,Afrikah smith,Afreen shariff,Afr sharathon,Sharif.atkins,Harga batu akik merah delima,Sharif atkins wife,Sharif atkins er,Sharif atkins instagram"
+          />
           <meta
             name="keywords"
-            content="Afrith,afrith,afrith m, afrith react, afrith front-end,afrith me, afrith portfolio,portfolio afrith,servicenow afrith, afrith service now,Afrith shariff,Afrith Shariff, afrith shariff y,afrith shariff me, react, servicenow, afrith, inspiration, currently, taking, development,Afrith shariff,Shariff attaya,Afrikah smith,Afreen shariff,Afr sharathon,Sharif.atkins,Harga batu akik merah delima,Sharif atkins wife,Sharif atkins er,Sharif atkins instagram"/>
+            content="Afrith,afrith,afrith m, afrith react, afrith front-end,afrith me, afrith portfolio,portfolio afrith,servicenow afrith, afrith service now,Afrith shariff,Afrith Shariff, afrith shariff y,afrith shariff me, react, servicenow, afrith, inspiration, currently, taking, development,Afrith shariff,Shariff attaya,Afrikah smith,Afreen shariff,Afr sharathon,Sharif.atkins,Harga batu akik merah delima,Sharif atkins wife,Sharif atkins er,Sharif atkins instagram"
+          />
         </Head>
         <FixedBtn />
         <main className="font-mono px-1 sm:px-10 overflow-hidden dark:bg-gray-900 md:px-20 lg:px-40">
-          <section className="min-h-screen">
-            <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
-            <Blockquote />
+          <section className="min-h-screen relative">
+              <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
+              <Blockquote />
           </section>
           {/* Quote section  */}
 

@@ -1,21 +1,10 @@
-import { Document } from "postcss";
 import React from "react";
+import Birds from "../components/Birds";
 import Cursor from "/components/Cursor";
 import Portfolio from "/pages/Portfolio";
-const { useState, useEffect } = React;
-
 export default function Index() {
-  //for initial loading screen
-  // const [blur, setBlur] = useState(true);
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     setBlur(false);
-  //   }, 2000);
-  // }, []);
-
   return (
     <>
-      <Cursor />
       <div className="hidden">
         <h1>Afrith</h1>
         <h2>Afrith Shariff</h2>
@@ -31,9 +20,13 @@ export default function Index() {
           services, including brand design, programming and teaching.
         </p>
       </div>
-      <Portfolio />
-      {/* {blur && <Spinner />} */}
-      {/* {!blur && <Portfolio />} */}
+      <Cursor />
+      {/* This Div contains Global class applied for bird animation for the styles please refer BirdAnimation.css   */}
+      <div className="container1 container-bird">
+        <Birds />
+        <Portfolio />
+        {/* This Div contains Global class applied for bird animation for the styles please refer BirdAnimation.css   */}
+      </div>
     </>
   );
 }
