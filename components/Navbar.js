@@ -9,7 +9,7 @@ import styles from "../styles/navbar.module.css";
 function Navbar({ darkMode, setDarkMode }) {
   return (
     <nav className="py-10 px-2 md:px-0 mb-12 flex justify-between dark:text-white">
-      <h1 className="font-burtons text-xl">about me</h1>
+      <h1 className="font-burtons text-xl text-slate-700 dark:text-white">about me</h1>
       <ul className="flex items-center z-50">
         <div>
           <div className={styles.toggleWrapper}>

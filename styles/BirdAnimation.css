@@ -6,7 +6,10 @@
   height: 100dvh;
   width: 100vw;
   overflow-x: hidden;
-  background-image: linear-gradient(to bottom right, #ffffff, #80dbff);
+
+  /* background-image: linear-gradient(to bottom right, #ffffff, #80dbff);
+ background-repeat: repeat; */
+  background-color: #c1e4f1;
 }
 
 .container-bird {
