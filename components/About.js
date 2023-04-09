@@ -44,10 +44,10 @@ function About() {
         Development as the primary focus!{")"} and love to read, code, and find
         new inspiration in nature.
       </p>
-      <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
+      {/* <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
         I offer from a wide range of services, including brand design,
         programming and teaching.
-      </p>
+      </p> */}
     </div>
   );
 }

@@ -16,7 +16,7 @@ function Projects({ scaleEffect }) {
       id: 2,
       title: "Al-Miraaj.com",
       description:
-        "Almiraj.com was a great client to work with. I was able to help them create a stunning landing page that was designed to engage visitors and generate leads. the response to the landing page has been overwhelmingly positive.",
+        "Almiraj.com was great friend to work with. I was able to help them create a stunning landing page that was designed to engage visitors and generate leads. the response to the landing page has been overwhelmingly positive.",
       link: "https://almiraaj.com",
       image: "/almiraaj2.png",
     },
