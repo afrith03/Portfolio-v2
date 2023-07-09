@@ -44,7 +44,7 @@ function Projects({ scaleEffect }) {
       <h3 className="text-3xl py-1 font-bold dark:text-white text-right">
         Some Things I’ve Built.
       </h3>
-
+{/* sdfgh */}
       <div className="hidden md:block">
         {ProjectArray.map((items) => (
           <motion.div
