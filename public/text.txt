@@ -1,0 +1,22 @@
+First and last name of the person you are recommending:
+Afrith Shariff Y
+
+Email address of the person you are recommending:
+afrithshariff123@gmail.com
+
+Why do you think the nominee should be inducted into the ServiceNow MVP program?
+(Tell them to copy the below answer)
+
+Suggested Answer (strong + natural):
+
+Afrith Shariff is one of the most passionate and consistent contributors I’ve seen in the ServiceNow ecosystem. He shares practical solutions, developer tips, and deep-dive explanations across ITSM, CSM, SecOps, Integrations, Virtual Agent, Now Assist, and Agentic AI.
+
+He actively mentors others, simplifies complex topics, and openly shares reusable approaches like catalog development patterns, end-to-end integration methods, and real-world architectural guidance.
+
+Afrith always helps the community with sincerity and clarity—whether it’s GlideRecordSecure usage, workflow best practices, SecOps configurations, or AI-driven automations. His impact has helped many professionals grow and solve real business problems.
+
+I strongly believe he deserves to be part of the ServiceNow MVP program.
+
+Remain anonymous?
+They can choose Yes or No — doesn’t matter for scoring.
+But if they want to stay safe and private → tell them to select Yes.
